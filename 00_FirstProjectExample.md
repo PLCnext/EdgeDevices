@@ -56,5 +56,5 @@ User/Password: (As in PLCnext/WBM – printed on the label of the device) <br>
 12. Make sure eather your “timestamp” is pressed or is configured in automatic mode (each x seconds). <br>
 ![Timestamp](images/00_Timestamp.jpg) <br>
 13.	You should be able to see your data in your database under "Explore" InfluxDB now. <br>
-![Timestamp](images00_DatabaseExplore.jpg) <br>
+![Timestamp](images/00_DatabaseExplore.jpg) <br>
 You can import the data into a dashboard and create alerts etc. <br>
