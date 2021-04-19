@@ -30,7 +30,7 @@ Fill details of the OPCUA server. These details can also by seeing the propertie
 
 This flow is used for reading the data of given topic and datatype. Topics and datatypes will be taken from the output of Browse OpcUa flow or OPCUA Client.
 
-![OPCtoInflux](images/03_ToInflux.jpg) <br>
+![OPCtoInflux](images/03_ToInflux.JPG) <br>
 
 OPC Subflow node will display in left panel once the flow is imported. 
 
@@ -42,5 +42,3 @@ Edit the Subflow node by entering the TOPIC and DATATYPE from output of previous
 
 First Join node used directly after Opus Client node is used to join the output in key value pair. Then a function node is used to exclude extra data and create JSON objects using topic, datatype, and values. Again, a join node is used to join the multiple output into one as an array.
 Finally, a function node is used to prepare the data for batch inserting it into InfluxDB, output is injected to InfluxDB batch node.
-
-[OPC UA to InfluxDB ](SourceCode/Quickstart_Flows/OPCUA/OpcUaToInflux.json)

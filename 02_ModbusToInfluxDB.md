@@ -26,7 +26,7 @@ Configure the Modbus Serial in node:
 
 - Enter the Slaves [Modbus Slave ID], Type [Function Code], Start [Start Address of Modbus Slave from where the data read has to be started], Count [Count of values required to be read from Modbus Slave], Poll Period [Interval in seconds] as in Modbus Slave.
 
-    ![ModbusConfig](images/2_ModSerSlave.jpg) <br>
+    ![ModbusConfig](images/2_ModSerSlave.JPG) <br>
 
 Outputs of both these Modbus serial in nodes are further passed on to respective function nodes for reading actual values from the buffer raw data. Edit the function node as below to read the buffer data from Modbus Slave
 >let data = msg.payload; <br>
@@ -41,17 +41,15 @@ FIELD_VALUE: A field value represents the value of an associated field
 TAG: Tags include TAG_KEY and TAG_NAME that are stored as strings and metadata.
 
 > { <br>
-    measurement: TABLE_NAME_TO_BE_INSERTED, <br>
-    fields: { <br>
-    FIELD_KEY: FIELD_VALUE <br>
-    }, <br>
+    &nbsp; measurement: TABLE_NAME_TO_BE_INSERTED, <br>
+    &ensp; fields: { <br>
+    &emsp; FIELD_KEY: FIELD_VALUE <br>
+    &ensp;}, <br>
     tags:{ <br>
-        TAG_KEY: TAG_NAME <br>
-    } <br>
+    &ensp;    TAG_KEY: TAG_NAME <br>
+   &nbsp; } <br>
 } <br>
 
 Within the last function node, the data is put into specific measurements. This node is input for InfluxDB batch node that require an array of objects, each object containing the information about measurements, data to inject, and tags to apply.
 
 Once the flow is ready, it can be deployed and the data capturing in InfluxDB starts. 
-
-[Read data from Modbus Slave](SourceCode/Quickstart_Flows/Modbus/Read_data_from_Modbus_Slave.json)

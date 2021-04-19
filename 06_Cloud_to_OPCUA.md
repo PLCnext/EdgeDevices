@@ -28,6 +28,7 @@ __Configure OPCUA Client node__
 - Configure Credentials with End Point and Security Policy and Security Mode in OPCUA Client Properties.
 
 ## Data on OPC UA Client
-After the data is triggered from GCP cloud, it can be seen under Data Access View of OPCUA client for the respective address location like below:
+After the data is triggered from GCP cloud, it can be seen under Data Access View of OPCUA client for the respective address location like below: <br>
+
 ![Example_DataOnClient](images/06_DataOnClient.JPG) <br>
 

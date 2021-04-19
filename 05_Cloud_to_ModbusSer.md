@@ -18,12 +18,12 @@ Configure the Function node for Azure connections:
 Enter the device ID, Key, Protocol in Json script for First Function node for connecting with Azure IOT Cloud Interface.
 
 > let data = msg.payload; <br>
-    msg.payload = { <br>
-    deviceId:"<Device ID Here>", <br>
-    key: "<device key here>”, <br>
-    protocol: "amqp", <br>
-    data: data
-} <br>
+     &ensp;msg.payload = { <br>
+     &ensp;deviceId:"<Device ID Here>", <br>
+     &ensp;key: "<device key here>”, <br>
+     &ensp;protocol: "amqp", <br>
+     &ensp;data: data <br>
+ &ensp; } <br>
 return msg;
 
 __Configure Azure IOT Hub node__ <br>
@@ -38,7 +38,5 @@ __Configure the Modbus Serial out node__ <br>
 - Enter the Slaves [Modbus Slave ID], Type [Function Code], Start [Start Address of Modbus Slave from where the data write has to be started], as in Modbus Slave. <br>
 ![ModbusSerOutConfig](images/05_ModbusSerOutConfig.JPG) <br>
 
-
-[Write data to Modbus Slave](SourceCode/Quickstart_Flows/Modbus/Write_data_to_Modbus_Slave.json)
 
 

@@ -10,17 +10,17 @@ SourceCode: <br>
 [Common & Function Nodes](SourceCode/Quickstart_Flows/BasicNodes/Common_Function_Nodes.json) <br> [Sequence Parser Nodes](SourceCode/Quickstart_Flows/BasicNodes/Sequence_Parser_Nodes.json) <br> [Storage Nodes](SourceCode/Quickstart_Flows/BasicNodes/Storage_Nodes.json)
 
 ## Overview 
-Node-RED is a programming tool for wiring together hardware devices, APIs and online services. Node-RED provides a browser-based editor that makes it easy to wire together flows 
+Node-RED is a programming tool for wiring together hardware devices, APIs and online services. Node-RED provides a browser-based editor that makes it easy to wire together flows 
 using the wide range of nodes in the palette that can be deployed to its runtime in a single 
 click.
 The Node-RED palette includes a default set of nodes that are the basic building blocks for 
 creating flows. Few more existing basic nodes will be used. 
 
 ![Oveview_NodeRED](images/Overview_NodeRED.JPG)
-- The left-hand side of the screen consists of the nodes a user can drag and drip for creating flows.
+- The left-hand side of the screen consists of the nodes a user can drag and drip for creating flows.
 - The middle section is the flow window here a user can drag nodes and created flows by 
 connecting “wire” between the nodes.
-- The right-side of the screen is for debugging, information about nodes, and a help section for each node.
+- The right-side of the screen is for debugging, information about nodes, and a help section for each node.
 
 ## Basic Nodes
 Node-RED has a “node” used in the flow as a logical block in every step. <BR>
@@ -32,7 +32,7 @@ Node-RED has a “node” used in the flow as a logical block in every step. <BR
 Injects a message into a flow, either manually or at regular intervals. The message payload 
 can be a variety of types, including strings, JavaScript objects, or the current time.
 The Inject node can initiate a flow with a specific payload value. The default payload is a 
-time stamp of the current time in milliseconds since January 1st, 1970. The node also supports injecting strings, numbers, booleans, JavaScript objects, or flow/global context values. 
+time stamp of the current time in milliseconds since January 1st, 1970. The node also supports injecting strings, numbers, booleans, JavaScript objects, or flow/global context values. 
 By default, the node is triggered manually by clicking on its button within the editor. It can 
 also be set to inject at regular intervals or according to a schedule. It can also be configured 
 to inject once each time the flows are started.
@@ -40,7 +40,7 @@ The maximum Interval that can be specified is about 596 hours/24 days. However, 
 looking at intervals greater than one day, consider using a scheduler node that can cope 
 with power outages and restarts.
 
-![InjectNodes](images/N_Inject.jpg) <br>
+![InjectNodes](images/N_Inject.JPG) <br>
 The edit configuration of inject node includes one output; the output payload includes two 
 parameters. 
 - payload - The configured payload of the message.
@@ -51,7 +51,7 @@ Displays selected message properties in the “debug” sidebar tab and optional
 log. By default, it displays msg.payload, but can be configured to display any property, the 
 full message, or the result of a JSON data.
 The debug sidebar provides a structured view of the messages it has sent, making it easier 
-to understand their structure. JavaScript objects and arrays can be collapsed and expanded as required. Buffer objects can be displayed as raw data or as a string, if possible. <BR>
+to understand their structure. JavaScript objects and arrays can be collapsed and expanded as required. Buffer objects can be displayed as raw data or as a string, if possible. <BR>
 
 ![DebugNode](images/N_Debug.JPG) <br>
 Fields available in the “Edit debug node” window are:
@@ -113,7 +113,7 @@ the node, it cannot be overridden by the corresponding message property
 
 
 ### MQTT in Node
-Connects to a MQTT broker and subscribes to messages from the specified topic. The subscription topic can include MQTT wild cards, + for one level, # for multiple levels. 
+Connects to a MQTT broker and subscribes to messages from the specified topic. The subscription topic can include MQTT wild cards, + for one level, # for multiple levels. 
 This node requires a connection to a MQTT broker to be configured. Click the “Pencil” icon 
 to open the “Edit mqtt in node” window for configuration.
 Several MQTT nodes (in or out) can share the same broker connection, if required.
@@ -154,7 +154,7 @@ value on every Interval. Every inject subscribes a new monitored item.
 ![OPCClient](images/N_OPCClient.JPG) <br>
 Edit window contains following fields:
 - Endpoint: Configured in same way as in 3.2.6 section.
-- Action: Specify the type of action that needs to be performed. The list of actions available are:
+- Action: Specify the type of action that needs to be performed. The list of actions available are:
 - Read
 - Write
 - Browse

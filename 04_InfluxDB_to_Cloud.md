@@ -41,28 +41,28 @@ Configure Pub Sub node with GCP credentials, Key File, Topic name with respect t
 ### Data on AWS Console
 Subscribe to a Topic in AWS console and use the same topic in AWS node in Node-RED application. After the data is triggered, it can be seen on AWS console window like below: 
 > { <br>
-    "holding" <br>
-    { <br>
-        "time": "2021-04-12T13:37:01.670Z", <br>
-        "location": "Holding Values", <br>
-        "value": 5 <br>
-    } <br>
-    { <br>
-        "time": "2021-04-12T13:37:01.670Z", <br>
-        "location": "Holding Values", <br>
-        "value": 5 <br>
-    } <br>
-    { <br>
-        "time": "2021-04-12T13:37:01.670Z", <br>
-        "location": "Holding Values", <br>
-        "value": 5 <br>
-    } <br>
-    "descrete" <br>
-    { <br>
-        "time": "2021-04-12T13:37:01.670Z", <br>
-        "location": "Holding Values", <br>
-        "value": 1 <br>
-    } <br>
+    &ensp; "holding" <br>
+    &ensp;{ <br>
+        &emsp; "time": "2021-04-12T13:37:01.670Z", <br>
+         &emsp; "location": "Holding Values", <br>
+         &emsp; "value": 5 <br>
+    &ensp;} <br>
+    &ensp;{ <br>
+        &emsp; "time": "2021-04-12T13:37:01.670Z", <br>
+        &emsp; "location": "Holding Values", <br>
+        &emsp; "value": 5 <br>
+    &ensp;} <br>
+    &ensp;{ <br>
+        &emsp; "time": "2021-04-12T13:37:01.670Z", <br>
+        &emsp; "location": "Holding Values", <br>
+        &emsp; "value": 5 <br>
+    &ensp;} <br>
+    &ensp;"descrete" <br>
+    &ensp;{ <br>
+        &emsp; "time": "2021-04-12T13:37:01.670Z", <br>
+        &emsp; "location": "Holding Values", <br>
+        &emsp; "value": 1 <br>
+    &ensp;} <br>
    { 
 
 
@@ -76,6 +76,6 @@ Create the topic and use the same topic in Pub/Sub node in Node-RED application 
 
 ![Google_Example](images/04_GoogleCloud.JPG) <br>
 
-### Other Flows to send data into Any Cloud:
+### Other SourceCode-Flows to send data into Any Cloud:
  [InfluxDB to AWS](SourceCode/Quickstart_Flows/AWS/Influx_to_AWS.json) <br> [InfluxDB to Azure](SourceCode/Quickstart_Flows/Azure/Azure_with_Cloud_nodes.json) <br> 
  [InfluxDB to Azure via MQTT](SourceCode/Quickstart_Flows/Azure/Azure_with_MQTT_nodes.json)
