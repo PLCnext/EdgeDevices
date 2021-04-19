@@ -42,13 +42,6 @@ If the project is outdated, we reserve the right to remove it.
 |   6   |  [Cloud to OPC UA Write](06_Cloud_to_OPCUA.md)   |  Write data into OPCUA server from cloud (Azure/AWS/GCP)   |  [AnyCloud to OPC UA](SourceCode/Quickstart_Flows/QuickGuideFlows/Cloud_to_OPCUA.json)   |
 |     |     |     |     |
 
-## Docker Portainer App for Edge Devices 
-Docker simplifies application deployment with containers, which contain all the necessary packages, that can be easily transported and installed as files. Containers ensure the separation and management of resources used on the EPC.  
-This includes: code, runtime module, system tools, system libraries.
-
-Portainer removes the complexity associated with container orchestrators so anyone can exploit the power of containers. It can be used to set up environments, deploy applications and monitor application performance. <br>
-LINK TO APP
-
 ## Import Example-flows into Node-RED of your EPC 1502/1522
 1. <p> Connect to your Edge-PC via Ethernet and open the Edge-Cockpit. <br>
     Default: http://192.168.2.10/cockpit </p>

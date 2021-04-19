@@ -16,7 +16,7 @@ click.
 The Node-RED palette includes a default set of nodes that are the basic building blocks for 
 creating flows. Few more existing basic nodes will be used. 
 
-![Oveview_NodeRED](images\Overview_NodeRED.JPG)
+![Oveview_NodeRED](images/Overview_NodeRED.JPG)
 - The left-hand side of the screen consists of the nodes a user can drag and drip for creating flows.
 - The middle section is the flow window here a user can drag nodes and created flows by 
 connecting “wire” between the nodes.
@@ -24,7 +24,7 @@ connecting “wire” between the nodes.
 
 ## Basic Nodes
 Node-RED has a “node” used in the flow as a logical block in every step. <BR>
-![TableNodes](images\TableNodes.jpg)
+![TableNodes](images/TableNodes.jpg)
 
 ## Node Description
 
@@ -40,7 +40,7 @@ The maximum Interval that can be specified is about 596 hours/24 days. However, 
 looking at intervals greater than one day, consider using a scheduler node that can cope 
 with power outages and restarts.
 
-![InjectNodes](images\N_Inject.jpg) <br>
+![InjectNodes](images/N_Inject.jpg) <br>
 The edit configuration of inject node includes one output; the output payload includes two 
 parameters. 
 - payload - The configured payload of the message.
@@ -53,7 +53,7 @@ full message, or the result of a JSON data.
 The debug sidebar provides a structured view of the messages it has sent, making it easier 
 to understand their structure. JavaScript objects and arrays can be collapsed and expanded as required. Buffer objects can be displayed as raw data or as a string, if possible. <BR>
 
-![DebugNode](images\N_Debug.JPG) <br>
+![DebugNode](images/N_Debug.JPG) <br>
 Fields available in the “Edit debug node” window are:
 - Output the complete message or output only msg.payload.
 - Output the message to a debug window, system console, or node status.
@@ -70,7 +70,7 @@ choose to return nothing to halt a flow.
 The “Setup” tab contains code that will be run whenever the node is started. The “Close” tab 
 contains code that will be run when the node is stopped. <br>
 
-![FunctionNode](images\N_Function.JPG) <br>
+![FunctionNode](images/N_Function.JPG) <br>
 Available fields in the “Edit function node” window are:
 - “Name” field of the node.
 - “Setup” tab, which contains JavaScript code that will be run once whenever the node is 
@@ -89,7 +89,7 @@ from escaping characters like /, &, and etc.
 The node can optionally automatically encode msg.payload as query string parameters for 
 a GET request, in which case msg.payload has to be an object. <br>
 
-![HttpNode](images\N_http.JPG) <br>
+![HttpNode](images/N_http.JPG) <br>
 The “Edit http request node” window contains the following fields:
 - Method: Select the http request method, i.e., GET, POST, PUT, DELETE, HEAD, or the 
 one that is being set by msg.method.
@@ -102,7 +102,7 @@ and Parsed JSON object.
 ### http response
 Sends responses back to requests received from an HTTP Input node. <BR>
 
-![HttpResponse](images\N_httpRes.JPG) <br>
+![HttpResponse](images/N_httpRes.JPG) <br>
 The window contains the following fields:
 - Name of the node
 - Status code that is to be sent in response.
@@ -118,7 +118,7 @@ This node requires a connection to a MQTT broker to be configured. Click the “
 to open the “Edit mqtt in node” window for configuration.
 Several MQTT nodes (in or out) can share the same broker connection, if required.
 
-![MQTTNode](images\N_MQTT.JPG) <br>
+![MQTTNode](images/N_MQTT.JPG) <br>
 Fields in the “Edit mqtt in node” window
 - Server configure field.
 - Topic: Provide topic that is needed to field triggered.
@@ -126,7 +126,7 @@ Fields in the “Edit mqtt in node” window
 - Output like String, Buffer, JSON, etc.
 - Name of the node. 
 
-![MQTTBroker](images\N_MQTT_Broker.JPG) <BR>
+![MQTTBroker](images/N_MQTT_Broker.JPG) <BR>
 Provide the server host and port, along with the client ID of the device. 
 
 ### OPC UA Browser
@@ -134,11 +134,11 @@ Connect to an endpoint: opc.tcp://host:port/UA/EndpointName. Inject a Timestamp 
 topic of msg object to browse. Browsers “Topic” field is to define one browseable OPC UA 
 Item address like ns=0;i=85. Payload contains just references of the give OPC UA address.
 
-![OPCBrowser](images\N_OPCBrowser.JPG) <br>
+![OPCBrowser](images/N_OPCBrowser.JPG) <br>
 
 Click the “Pencil” icon to configure the Endpoint 
 
-![OPCEndpoint](images\OPCEndpoint.JPG) <br>
+![OPCEndpoint](images/OPCEndpoint.JPG) <br>
 Add an enpoint , for example:
 > opc.tcp://127.0.0.1:4840  to connect to internal PLCnext Engineer variables
 
@@ -151,7 +151,7 @@ The value to Write should be injected by an OpcUa-Item.
 Inject the Topic only once on Subscribe or Event for subscription and you got the changing 
 value on every Interval. Every inject subscribes a new monitored item. 
 
-![OPCClient](images\N_OPCClient.JPG) <br>
+![OPCClient](images/N_OPCClient.JPG) <br>
 Edit window contains following fields:
 - Endpoint: Configured in same way as in 3.2.6 section.
 - Action: Specify the type of action that needs to be performed. The list of actions available are:
@@ -174,7 +174,7 @@ Defines OPC UA events that will be subscribed from the server. Server root node 
 look at selected events under it. If the Condition type can be left empty, then all alarm/event 
 objects will be considered. 
 
-![OPCEvent](images\N_OPCEvent.JPG) <BR>
+![OPCEvent](images/N_OPCEvent.JPG) <BR>
 The available fields in the “Edit OpcUa-Event node” window are:
 - Root Node: Specify root node with node id.
 - Event Type: Select event type from the drop-down menu.
@@ -187,7 +187,7 @@ Defines OPC UA item, type and value. Item contains valid OPC UA address like
 There are not all types possible for now, but you can select some. Value is needed only if 
 item will be written to OPC UA server. If value isn’t filled, OpcUa-Item sends input payload.
 
-![OPCItem](images\N_OPCItem.JPG) <br>
+![OPCItem](images/N_OPCItem.JPG) <br>
 The available fields in the “Edit OpcUa-Item Node” window are:
 - Item: OpcUa address of item. 
 - Type: Select a type of value to insert from the drop-down menu.

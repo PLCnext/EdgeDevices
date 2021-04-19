@@ -10,23 +10,23 @@ SourceCode: [Read data from Modbus Slave](SourceCode/Quickstart_Flows/QuickGuide
 
 >Note: Please note while importing the Modbus flows use only configuration of own port otherwise it will show the PortNotOpen error for duplicate configurations of same port. Although this is being maintained while editing the Modbus Serial node
 
-![ModbusSer](images\2_ModbusSer.JPG) <br>
+![ModbusSer](images/2_ModbusSer.JPG) <br>
 This is the flow for taking values form Modbus Slaves and insert those values into InfluxDB. Below is the flow that is going to be used for explaining the said workflow.
 
-![ModbusSerFlow](images\2_ModbusSer_Flow.JPG) <br>
+![ModbusSerFlow](images/2_ModbusSer_Flow.JPG) <br>
 
 ### Configurations and Steps
 There are two Modbus serial in nodes used, one for reading values of holding register. Other one for reading discrete input values. 
 Configure the Modbus Serial in node:
 - Click on pencil icon against Port field for Modbus Serial In/Out <BR> 
-![Pencil](images\Pensil.JPG) <BR>
+![Pencil](images/Pensil.JPG) <BR>
 - Configure the Port, Baud Rate, Data Bits, Parity and Stop Bits same as in Modbus Simulator
 
-    ![ModbusConfig](images\2_ModSerial_tty.JPG) <br>
+    ![ModbusConfig](images/2_ModSerial_tty.JPG) <br>
 
 - Enter the Slaves [Modbus Slave ID], Type [Function Code], Start [Start Address of Modbus Slave from where the data read has to be started], Count [Count of values required to be read from Modbus Slave], Poll Period [Interval in seconds] as in Modbus Slave.
 
-    ![ModbusConfig](images\2_ModSerSlave.jpg) <br>
+    ![ModbusConfig](images/2_ModSerSlave.jpg) <br>
 
 Outputs of both these Modbus serial in nodes are further passed on to respective function nodes for reading actual values from the buffer raw data. Edit the function node as below to read the buffer data from Modbus Slave
 >let data = msg.payload; <br>
