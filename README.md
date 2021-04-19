@@ -46,10 +46,10 @@ If the project is outdated, we reserve the right to remove it.
 1. <p> Connect to your Edge-PC via Ethernet and open the Edge-Cockpit. <br>
     Default: http://192.168.2.10/cockpit </p>
 2. <p> Open Node-RED </p>
-3. <p> Click on the "Import" button on the right upper corner. <br>
-    ![Import_Flow](C:/Users/IMY5TB/Pictures/epc/Github/Import_Node.jpg "Import Flow") </p>
-4. <p> Click on "select a file to import" and open up the example-flow you downloaded before. <br>
-    ![Select_Flow](C:/Users/IMY5TB/Pictures/epc/Github/Select_Flow.jpg "Select Flow") </p>
+3. Click on the "Import" button on the right upper corner. <br>
+![Import_Flow](images/Import_Node.jpg) </p>
+4. Click on "select a file to import" and open up the example-flow you downloaded before. <br>
+![Select_Flow](images/Select_Flow.jpg) </p>
 
 ## Contributing
 
