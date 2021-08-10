@@ -29,6 +29,12 @@ Ask via [mail](mailto:OSSPLCnext@phoenixcontact.com) for an organisation reposit
 If your project meets all criteria and is validated to be an organizational repository, you are responsible for maintenance. 
 If the project is outdated, we reserve the right to remove it.
 
+## Edge-Cockpit
+To start any function on the EPC, make sure your Host-PC is connected via Ethernet and configured in the same network.
+Open up a webbrowser (e.g. Google Chrome) and open-up the Edge-Cockpit:
+<b>ip-adress/cockpit </b>
+(default X2-Ip adress: 192.168.2.10/cockpit)
+
 ## Quickstart-Guide
 
 |   #  |  Topic   |  Content   |  SourceCode   |
@@ -41,6 +47,7 @@ If the project is outdated, we reserve the right to remove it.
 |  5   |  [Any Cloud to  Modbus Write](05_Cloud_to_ModbusSer)  |  Gathering data from any Cloud and sending them to an Modbus Serial Slave    |  [AnyCloud to Modbus](SourceCode/Quickstart_Flows/QuickGuideFlows/Cloud_to_Modbus.json)   |
 |   6   |  [Cloud to OPC UA Write](06_Cloud_to_OPCUA.md)   |  Write data into OPCUA server from cloud (Azure/AWS/GCP)   |  [AnyCloud to OPC UA](SourceCode/Quickstart_Flows/QuickGuideFlows/Cloud_to_OPCUA.json)   |
 |     |     |     |     |
+
 
 ## Import Example-flows into Node-RED of your EPC 1502/1522
 1. <p> Connect to your Edge-PC via Ethernet and open the Edge-Cockpit. <br>
