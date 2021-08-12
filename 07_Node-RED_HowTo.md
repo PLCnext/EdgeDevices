@@ -21,10 +21,12 @@
 
 
 ## Import Example-flows into Node-RED of your EPC 1502/1522
-1. <p> Connect to your Edge-PC via Ethernet and open the Edge-Cockpit. <br>
+1. Open-up and copy the source code (just the long string) of any example-flow (CNTRL + C) <br>
+![CopyFlow](images/N_ExampleCopy.JPG)
+2. <p> Connect to your Edge-PC via Ethernet and open the Edge-Cockpit. <br>
     Default: http://192.168.2.10/cockpit </p>
-2. <p> Open Node-RED </p>
-3. Click on the "Import" button on the right upper corner. <br>
+3. <p> Open Node-RED </p>
+4. Click on the "Import" button on the right upper corner. <br>
 ![Import_Flow](images/Import_Node.jpg) </p>
-4. Click on "select a file to import" and open up the example-flow you downloaded before. <br>
-![Select_Flow](images/Select_Flow.jpg) </p>
+5. Paste the string to the "Clipboard" and import the flow <br>
+![Select_Flow](images/N_ImportFlow.jpg) </p>
