@@ -33,15 +33,16 @@ If the project is outdated, we reserve the right to remove it.
 To start any function on the EPC, make sure your Host-PC is connected via Ethernet and configured in the same network.
 Open up a webbrowser (e.g. Google Chrome) and open-up the Edge-Cockpit:
 <b>ip-adress/cockpit </b>
-(default X2-Ip adress: 192.168.2.10/cockpit)
-![Cockpit](images/00_CockpitS.jpg)
+(default X2-Ip adress: 192.168.2.10/cockpit) <br>
 
-
+![Cockpit](images/00_CockpitS.jpg) <br>
+<br>
+<br>
 ## Quickstart-Guide
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 0 | [Introduction to EPC & Cockpit](99_EPC15x2_Introduction) | Benefits of Edge Computing <br> Functions and Features of your EPC 15x2 |
+| 0 | [Introduction to EPC & Cockpit](99_EPC15x2_Introduction.md) | Benefits of Edge Computing <br> Functions and Features of your EPC 15x2 |
 |   1  |  [Node-RED](07_Node-RED_HowTo.md)   |  Learn Node-RED within the Edge PC with basic node functions <br> Guidance on how to connect PLCnext with Node-RED and InfluxDB  <br> Collection of Example FLows   | 
 |  3   | [InfluxDB Database](09_InfluxDB.md)    | Configuration of the InfluxDB database <br> How to create a dashboard <br> How to create an alert management  |
 |  4   | [Docker-Portainer](08_DockerPortainer.md)    | Installation of Docker Portainer on your EPC <br> How to deplay containers  | 

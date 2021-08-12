@@ -24,7 +24,7 @@ Those information have to be inserted in Node-RED when importing variables. For 
 After importing variables to InfluxDB, your variable should be visible in the "EXPLORE" tab in InfluxDB. You can choose data you want to visualise (multiple selection via the "+") and see it's value over the time in the table.
 ![Explore](images/I_ExploreSm.JPG) <br>
 You can also change the visualisation style by clicking the "Visualisation" switch in the top center of the tab. <br>
-![VisualisationCh](images/I_VisuCh.JPG) <br>
+![VisualisationCh](images/I_VisuCh.jpg) <br>
 The generated visualization can now be inserted into a dashboard. <br>
 A dashboard can display multiple bars and diagrams. <br>
 To do so, click on the upper-right buuton "Send to Dashboard" and eather create a new dashboard or send the diagram to a dashboard you already created. The diagram can be named by choosing a "Cell Name". <br>

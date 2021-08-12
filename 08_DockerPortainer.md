@@ -13,9 +13,9 @@ EPC.
 This includes: code, runtime module, system tools, system libraries.
 Portainer removes the complexity associated with container orchestrators so
 anyone can exploit the power of containers. It can be used to set up
-environments, deploy applications and monitor application performance.
-![DockerImg](images/EPC_Portainer.png)
-
+environments, deploy applications and monitor application performance. <br>
+![DockerImg](images/EPC_Portainer.png) <br>
+<br>
 ## How to install Docker-Portainer on my EPC?
 
 1. Visit the PLCnext Store https://www.plcnextstore.com/977 <br>
@@ -35,6 +35,7 @@ Passwort: admin123 <br>
 ![Docker_Registration](images/1_Registration_Docker.JPG)
 
 7. Choose Docker to use Docker-Portainer after the setup.
+
 ![Docker_Choose](images/2_Docker_Req.JPG)
 
 ## Troubleshooting
@@ -52,8 +53,8 @@ the following command:
 > sudo recover-plcnext 1
 
 1. Log in via Putty to your EPC with Admin credentials
-2. Delete the the contents of the user file system
-![SudoTs](images/SudoTS.JPG)
+2. Delete the the contents of the user file system <br>
+![SudoTs](images/SudoTS.JPG) <br>
 3. Restart your device and try to install the app again.
 
 # How to deploy a container - Example
