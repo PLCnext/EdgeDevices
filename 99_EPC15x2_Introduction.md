@@ -11,7 +11,7 @@
 An Edge PC processes data closer to where it is generated, instead of processing it in the Cloud - with great benefits in Latency, bandwith of your network and secruity!
 >Edge Computing is the practice of capturing, storing, processing and analyzing data near the client, where the data is generated. <br>
 
-![EPC_Featres](images/EPC_Features_wn.png)
+![EPC_Featres](images/EPC_Features.jpg)
 
 The Edge PCs of Phoenix Contact are the perfect tools for your IoT development.
 >To the products: <br>
@@ -34,7 +34,7 @@ Open up a webbrowser (e.g. Google Chrome) and open-up the Edge-Cockpit:
 <b>ip-adress/cockpit </b>
 (default X2-Ip adress: 192.168.2.10/cockpit)
 ![Cockpit](images/0_Cockpit.jpg)
->From here you can start any Function like Node-RED, Docker-Portainer or the InfluxDB Databaseadministration.
+>From here you can start any Function like Node-RED, Docker-Portainer or the InfluxDB Database administration.
 
 ## Functions of the Edge Cockpit
 
