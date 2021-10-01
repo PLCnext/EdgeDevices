@@ -1,4 +1,4 @@
-# Getting Started Guide template for IoT Core: Hardware
+# Getting Started Guide for AWS IoT Core
 
 
 Before you start this tutorial, make sure that you have completed 
