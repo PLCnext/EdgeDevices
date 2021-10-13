@@ -1,6 +1,9 @@
 # Getting Started Guide for AWS IoT Core
+<br>
 
 >SourceCode: [InfluxDB to AWS](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json) <br>
+
+<br>
 
 Before you start this tutorial, it helps to get familiar with 
 [Getting started with AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html) 
