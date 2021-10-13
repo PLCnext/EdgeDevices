@@ -1,7 +1,8 @@
 # Getting Started Guide for AWS IoT Core
 
+>SourceCode: [InfluxDB to AWS](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json) <br>
 
-Before you start this tutorial, make sure that you have completed 
+Before you start this tutorial, it helps to get familiar with 
 [Getting started with AWS IoT Core](https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html) 
 
 ## Overview
@@ -57,7 +58,7 @@ the top edge of the DIN rail.
 3. Rotate the EPC 15x2 down against the lower edge of the DIN rail. 
 Press in until the latch snaps closed.
 4. Secure the device on the rail with clamps.
-5. If necessary to remove, release the latch using a screwdriver, rotate the bottom of the EPC away, and then lift it straight up off 
+5. If necessary to remove, release the latch using a screwdriver, rotate the bottom of the EPC away, and then lift it straight up off 
 the DIN rail <br>
 ![EPC_DinRail](images/EPC_DinRail.JPG)
 
@@ -89,9 +90,11 @@ Refer to the instructions at [Create AWS IoT Resources](https://docs.aws.amazon.
 •	Create a thing object 
 Pay special attention to the Notes.
 
+The certificates and key you downloaded will be used in subsequent steps.  Rename the certificate to DemoThing.cert.pem and the key to DemoThing.private.key.
+
 ## Provision the Device with credentials
 1. Login from your development-PC to your EPC using any SFTP Transfer-Tool. In this exapmle WinSCP was used. WinSCP can be downloaded [here](https://winscp.net/eng/index.php).
-2. Create a new folder on your EPC under /opt/plcnext/apps and copy all the certifications downloaded from your AWS Things. <br>
+2. Create a new folder on your EPC under /opt/plcnext/apps and copy all the certificates downloaded when you created the AWS Things corresponding to your device. <br>
 ![AWS-CertFolder](images/10_AWS_CertFolder.JPG) <br>
 
 
@@ -118,12 +121,11 @@ Those nodes will be pre-installed on your Node-RED of your EPC 15x2. <br>
 ![AWS_MQTT](images/AWS_MQTT.JPG)
 3. Click on edit icon against Device <br>
 ![AWS_Edit](images/AWS_Edit.JPG)
-4. Enter Name for the node, type as MQTT broker, AWS Thing name as Client ID, Device Advisor Endpoint as Endpoint, and location where the certificates have been copied. <br>
+4. Enter Name for the node, type as MQTT broker, AWS Thing name as Client ID.  To find the Endpoint, navigate to the AWS IoT console and choose Settings in the navigation pane on the left - the endpoint can be found under Device Data Endpoint. Also enter the location where the certificates have been copied in the AWS Certs field. <br>
 ![AWS_Edit2](images/AWS_Edit2.JPG)
-5. Navigate back to [AWS Console](https://console.aws.amazon.com/iot/home), in the left menu, choose Test. <br>
+5. Navigate back to [AWS Console](https://console.aws.amazon.com/iot/home), in the left menu, choose Test and choose MQTT test client. <br>
 ![AWS_Test](images/AWS_Test.JPG)
-6. Subscribe to a topicName on which your device publishes. For the getting started sample app, subscribe to #, which subscribes to all message topics. <br>
-Continuing with the getting started example, on the Subscribe to a topic tab, in the Topic filter field, enter #, and then choose Subscribe. <br>
+6. Continuing with the getting started example, on the Subscribe to a topic tab, in the Topic filter field, enter #, and then choose Subscribe.  <br>
 ![AWS_Sub](images/AWS_Sub.JPG)
 7. The topic message log page, # opens and # appears in the Subscriptions list. <br>
 ![AWS_Sub2](images/AWS_Sub2.JPG)
