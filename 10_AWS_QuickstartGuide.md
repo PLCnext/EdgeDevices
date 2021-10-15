@@ -80,6 +80,7 @@ connector.
 ![EPC_PS](images/EPC_PowerSupply.JPG)
 
 
+
 ## Setup your AWS account and Permissions
 Refer to the instructions at [Set up your AWS Account](https://docs.aws.amazon.com/iot/latest/developerguide/setting-up.html).  Follow the steps outlined in these sections to create your account and a user and get started:
 •	Sign up for an AWS account and 

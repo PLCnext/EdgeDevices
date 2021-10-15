@@ -44,10 +44,9 @@ Open up a webbrowser (e.g. Google Chrome) and open-up the Edge-Cockpit:
 | --- | --- | --- | --- |
 | 0 | [Introduction to EPC & Cockpit](99_EPC15x2_Introduction.md) | Benefits of Edge Computing <br> Functions and Features of your EPC 15x2 |
 |   1  |  [Node-RED](07_Node-RED_HowTo.md)   |  Learn Node-RED within the Edge PC with basic node functions <br> Guidance on how to connect PLCnext with Node-RED and InfluxDB  <br> Collection of Example Flows   | 
-|  3   | [InfluxDB Database](09_InfluxDB.md)    | Configuration of the InfluxDB database <br> How to create a dashboard <br> How to create an alert management  |
-|  4   | [Docker-Portainer](08_DockerPortainer.md)    | Installation of Docker Portainer on your EPC <br> How to deplay containers  | 
+|  2   | [InfluxDB Database](09_InfluxDB.md)    | Configuration of the InfluxDB database <br> How to create a dashboard <br> How to create an alert management  |
+|  3   | [Docker-Portainer](08_DockerPortainer.md)    | Installation of Docker Portainer on your EPC <br> How to deplay containers  | 
 |  4   | [AWS Quickstart Guide](10_AWS_QuickstartGuide.md)    | Quickstart and Information how to connect your EPC 15x2 to AWS Cloud <br> Using Pre-installed MQTT nodes to connect to AWS  | 
-
 
 
 ## Contributing
