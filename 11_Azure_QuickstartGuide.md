@@ -1,0 +1,137 @@
+---
+platform: {PLCnext Linux Yocto}
+device: {EPC 1502 / EPC 1522}
+language: {english}
+---
+
+# Table of Contents
+
+-   [Introduction](#Introduction)
+-   [Step 1: Prerequisites](#Prerequisites)
+-   [Step 2: Prepare your Device](#Prepareyourdevice)
+-   [Step 3: Build SDK and Run Samples](#Build)
+-   [Step 4 : Integration with Azure IoT Explorer](#Explorer)
+-   [Step 5: Connect to Azure IoT Central](#AzureIoTCentral)
+-   [Step 6 : Additional Information](#AdditionalInformation)
+-   [Step 7 : Additional Links](#AdditionalLinks)
+
+
+<a name="Introduction"></a>
+# Introduction
+**About this document**
+This document describes how to connect the Edge-PC EPC 1502 and EPC 1522 running PLCnext Linux Yocto with Azure IoT SDK. This multi-step process includes:
+
+-   Configuring Azure IoT Hub
+-   Registering your IoT device
+-   Provisioning your devices on Device Provisioning service 
+-   Build and deploy Azure IoT SDK on device
+-   Please provide introduction and features of your device here
+
+<a name="Prerequisites"></a>
+# Step 1: Prerequisites
+
+You should have the following items ready before beginning the process:
+
+-   [Prepare your development environment](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md)
+-   [Setup your IoT hub](https://github.com/robertalorro/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
+-   [Provision your device over DPS](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
+
+<a name="Prepareyourdevice"></a>
+# Step 2: Prepare your Device
+## Set up your hardware
+Choose the desired mounting method and follow the appropriate 
+procedure.
+
+### Wall mount
+Order No. [1147655](https://www.phoenixcontact.com/product/1147655) <br>
+The EPC 15x2 can be attached to a flat surface in a wall-mount orientation using the four key holes. The mounting surface must be flat and 
+not subject to vibration.
+>NOTE:
+The EPC 15x2 must be installed with the connectors oriented 
+down to allow the convection cooling to function efficiently <br>
+
+ Installation:
+ 1.  Attach the two brackets to the EPC... using the included M3x5 
+screws.Torque the screws to 0.5 Nm.
+2.  Use the EPC 15x2 as a template and mark the locations of the 
+mounting holes on the mounting surface.
+3. Use the correct anchor type for the mounting surface and securely attach the EPC 15x2 to the wall. Ensure the attaching hardware is in the small section of the mounting holes. <br>
+![EPC_Wall_Mount](images/EPC_WallMount.JPG)
+
+### DIN rail mount
+Order No. [1147464](https://www.phoenixcontact.com/product/1147464) <br>
+1. Install the mounting bracket on the EPC... with the included 
+M3x5 screws so the connectors will be oriented downward after 
+installation. Torque the screws to 0.5 Nm
+2. Angle the EPC 15x2 so the top edge of the mounting plate hangs on 
+the top edge of the DIN rail.
+3. Rotate the EPC 15x2 down against the lower edge of the DIN rail. 
+Press in until the latch snaps closed.
+4. Secure the device on the rail with clamps.
+5. If necessary to remove, release the latch using a screwdriver, rotate the bottom of the EPC away, and then lift it straight up off 
+the DIN rail <br>
+![EPC_DinRail](images/EPC_DinRail.JPG)
+
+### Connecting the power supply
+A removable plug (Order No. [1847055](https://www.phoenixcontact.com/product/1847055) on the EPC 15x2 accepts 
+wire sizes of 0.2 ... 2.5 mm² (12 ... 24 AWG).
+> NOTE:
+To ensure safe operation, use safety extra-low voltage 
+(SELV) according to DIN EN 61131 as supply voltage.
+This device is protection class I item of equipment.
+
+1. Connect the power conductors to the appropriate terminal in the 
+connector.
+2. Connect the ground/earth to the screw (5).
+3. Insert the connector into the IPC. <br>
+![EPC_PS](images/EPC_PowerSupply.JPG)
+
+### Ethernet
+Both ethernetports have their own MAC address.
+> Default IP-address: X2 - 192.168.2.10 /// X3 - 192.168.1.10
+
+The IP-adress can be set eather with [PLCnext Engineer](https://www.phoenixcontact.com/product/1046008) (PLC 61131 Engineering-Tool) or via Edge-Cockpit (deafult X2 - 192.168.2.10/cockpit).
+
+> NOTE: Both ethernet-ports can be used to send data into Azure. 
+Only X2 can be used for PROFINET.
+
+<a name="Build"></a>
+# Step 3 : Build SDK and Run Samples
+
+Data will be send via Node-RED into MS Azure Cloud.
+All needed software and tools come pre-installed with your Edge-PC!
+
+1. All required nodes can be found in the pre-installed nodes of your EPC.
+![Azure_Nodes](images/Azure_Nodes.JPG)
+2. Please import the [Example SourceCode](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json) to Node-RED. <br> 
+If you are unsure how to import a Flow into Node-RED, please see the explaination here: [How-To Node-RED](07_Node-RED_HowTo.md).
+![Azure_Nodes2](images/Azure_Node2.JPG) <br>
+3. Enter the device ID, Key, Protocol in Json script into the first function-node for connecting with Azure IOT Cloud Interface.
+![Azure_Nodes3](images/Azure_Node3.JPG) <br>
+4. Configure Azure IoT Hub Node: <br>
+•	Enter Protocol and Hostname in Azure IoT Hub Node.
+![Azure_Nodes4](images/Azure_Node4.JPG) <br>
+
+
+
+<a name="Explorer"></a>
+# Step 4: Integration with Azure IoT Explorer
+
+Azure IoT Explorer is used to verify the data received from the database. <br> 
+Select the device, you want to see data on and click on telemetry. <br>
+Click on "Start" to receive the events. <br>
+![Azure_Nodes5](images/Azure_Node5.JPG) <br>
+
+
+<a name="AdditionalLinks"></a>
+# Step 6 : Additional Links
+Please refer to the below link for additional information for Plug and Play
+
+-   [Manage cloud device messaging with Azure-IoT-Explorer](https://github.com/Azure/azure-iot-explorer/releases)
+-   [Azure SDK](https://github.com/Azure/azure-iot-sdk-c/blob/master/provisioning_client/samples/prov_dev_client_sample/prov_dev_client_sample.c)
+-   [Configure to connect to IoT Hub](https://docs.microsoft.com/en-us/azure/iot-pnp/quickstart-connect-device-c)
+-   [How to use IoT Explorer to interact with the device](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer#install-azure-iot-explorer)
+
+<br>
+
+Also, feel free to ask your question in our [PLCnext Forum](https://www.plcnext-community.net/en/discussions-2-offcanvas/forums.html).

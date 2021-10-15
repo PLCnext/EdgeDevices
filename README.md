@@ -47,7 +47,7 @@ Open up a webbrowser (e.g. Google Chrome) and open-up the Edge-Cockpit:
 |  2   | [InfluxDB Database](09_InfluxDB.md)    | Configuration of the InfluxDB database <br> How to create a dashboard <br> How to create an alert management  |
 |  3   | [Docker-Portainer](08_DockerPortainer.md)    | Installation of Docker Portainer on your EPC <br> How to deplay containers  | 
 |  4   | [AWS Quickstart Guide](10_AWS_QuickstartGuide.md)    | Quickstart and Information how to connect your EPC 15x2 to AWS Cloud <br> Using Pre-installed MQTT nodes to connect to AWS  | 
-
+|  5   | [Mircosoft Azure Quickstart Guide](11_Azure_QuickstartGuide.md)    | Quickstart and Information how to connect your EPC 15x2 to Microsoft Azure Cloud <br> Using Pre-installed MQTT nodes to connect to Azure  | 
 
 ## Contributing
 
