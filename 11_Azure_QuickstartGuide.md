@@ -3,6 +3,7 @@ platform: {PLCnext Linux Yocto}
 device: {EPC 1502 / EPC 1522}
 language: {english}
 ---
+> [Example SourceCode](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json)
 
 # Table of Contents
 
@@ -101,15 +102,15 @@ Only X2 can be used for PROFINET.
 Data will be send via Node-RED into MS Azure Cloud.
 All needed software and tools come pre-installed with your Edge-PC!
 
-1. All required nodes can be found in the pre-installed nodes of your EPC.
-![Azure_Nodes](images/Azure_Nodes.JPG)
+1. All required nodes can be found in the pre-installed nodes of your EPC. <br>
+![Azure_Nodes](images/Azure_Nodes.JPG) <br>
 2. Please import the [Example SourceCode](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json) to Node-RED. <br> 
 If you are unsure how to import a Flow into Node-RED, please see the explaination here: [How-To Node-RED](07_Node-RED_HowTo.md).
 ![Azure_Nodes2](images/Azure_Node2.JPG) <br>
 3. Enter the device ID, Key, Protocol in Json script into the first function-node for connecting with Azure IOT Cloud Interface.
 ![Azure_Nodes3](images/Azure_Node3.JPG) <br>
 4. Configure Azure IoT Hub Node: <br>
-•	Enter Protocol and Hostname in Azure IoT Hub Node.
+•	Enter Protocol and Hostname in Azure IoT Hub Node. <br>
 ![Azure_Nodes4](images/Azure_Node4.JPG) <br>
 
 
