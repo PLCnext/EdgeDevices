@@ -3,18 +3,19 @@ platform: {PLCnext Linux Yocto}
 device: {EPC 1502 / EPC 1522}
 language: {english}
 ---
+
+# Connect your EPC1502 / EPC 1522 device to your Azure IoT services
+
 > [Example SourceCode](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json)
 
 # Table of Contents
 
 -   [Introduction](#Introduction)
--   [Step 1: Prerequisites](#Prerequisites)
--   [Step 2: Prepare your Device](#Prepareyourdevice)
--   [Step 3: Build SDK and Run Samples](#Build)
--   [Step 4 : Integration with Azure IoT Explorer](#Explorer)
--   [Step 5: Connect to Azure IoT Central](#AzureIoTCentral)
--   [Step 6 : Additional Information](#AdditionalInformation)
--   [Step 7 : Additional Links](#AdditionalLinks)
+-   [Prerequisites](#Prerequisites)
+-   [Prepare your Device](#Prepareyourdevice)
+-   [Connect to Azure IoT](#ConnecttoAzureIoT) 
+-   [Integration with Azure IoT Explorer](#Explorer)
+-   [Additional Links](#AdditionalLinks)
 
 
 <a name="Introduction"></a>
@@ -28,7 +29,7 @@ This document describes how to connect the Edge-PC EPC 1502 and EPC 1522 running
 -   Build and deploy Azure IoT SDK on device
 
 <a name="Prerequisites"></a>
-# Step 1: Prerequisites
+Prerequisites
 
 You should have the following items ready before beginning the process:
 
@@ -37,7 +38,7 @@ You should have the following items ready before beginning the process:
 -   [Provision your device over DPS](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
 
 <a name="Prepareyourdevice"></a>
-# Step 2: Prepare your Device
+# Prepare your Device
 ## Set up your hardware
 Choose the desired mounting method and follow the appropriate 
 procedure.
@@ -95,8 +96,8 @@ The IP-adress can be set eather with [PLCnext Engineer](https://www.phoenixconta
 > NOTE: Both ethernet-ports can be used to send data into Azure. 
 Only X2 can be used for PROFINET.
 
-<a name="Build"></a>
-# Step 3 : Connect to Azure IoT Central
+<a name="Connect to Azure IoT"></a>
+# Connect to Azure IoT
 
 Data will be send via Node-RED into MS Azure Cloud.
 All needed software and tools come pre-installed with your Edge-PC!
@@ -124,7 +125,7 @@ The connection string can be found in Azure IoT Hub under <br>
 >Another Connection-Example can be seen here: [Node-RED Azure Guide](https://flows.nodered.org/node/node-red-contrib-azure-iot-hub#:~:text=node-red-contrib-azure-iot-hub%20is%20a%20Node-RED%20node%20that%20allows%20you,Hub%20Receiver%20and%20Azure%20IoT%20Hub%20Device%20Twin)
 
 <a name="Explorer"></a>
-# Step 4: Integration with Azure IoT Explorer
+# Integration with Azure IoT Explorer
 
 Azure IoT Explorer is used to verify the data received from the database. <br> 
 1. Go to [Azure IoT explorer releases](https://github.com/Azure/azure-iot-explorer/releases) and expand the list of assets for the most recent release. Download and install the most recent version of the application. <br>
@@ -147,7 +148,7 @@ This data should now be visible in the started "Telemetry" connection <br>
 ![Azure_Nodes11](images/Azure_Node11.JPG) <br>
 
 <a name="AdditionalLinks"></a>
-# Step 6 : Additional Links
+Additional Links
 Please refer to the below link for additional information for Plug and Play
 
 -   [Manage cloud device messaging with Azure-IoT-Explorer](https://github.com/Azure/azure-iot-explorer/releases)
