@@ -108,7 +108,7 @@ All needed software and tools come pre-installed with your Edge-PC!
 If you are unsure how to import a Flow into Node-RED, please see the explaination here: [How-To Node-RED](07_Node-RED_HowTo.md).
 ![Azure_Nodes2](images/Azure_Node2.JPG) <br>
 3. Create a new IoT device in Azure IoT Hub. <br>
-![Azure_Nodes6](images/Azure_Node6.JPG)
+![Azure_Nodes6](images/Azure_Node6.JPG) <br>
 Enter the device ID, Key, Protocol in Json script from the IoT device into the first function-node for connecting with Azure IOT Cloud Interface. <br>
   ![Azure_Nodes3](images/Azure_Node3.JPG) <br>
 4. Configure Azure IoT Hub Node: <br>
