@@ -97,7 +97,7 @@ The IP-adress can be set eather with [PLCnext Engineer](https://www.phoenixconta
 Only X2 can be used for PROFINET.
 
 <a name="Build"></a>
-# Step 3 : Build SDK and Run Samples
+# Step 3 : Connect to Azure IoT Central
 
 Data will be send via Node-RED into MS Azure Cloud.
 All needed software and tools come pre-installed with your Edge-PC!
@@ -107,22 +107,45 @@ All needed software and tools come pre-installed with your Edge-PC!
 2. Please import the [Example SourceCode](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json) to Node-RED. <br> 
 If you are unsure how to import a Flow into Node-RED, please see the explaination here: [How-To Node-RED](07_Node-RED_HowTo.md).
 ![Azure_Nodes2](images/Azure_Node2.JPG) <br>
-3. Enter the device ID, Key, Protocol in Json script into the first function-node for connecting with Azure IOT Cloud Interface.
-![Azure_Nodes3](images/Azure_Node3.JPG) <br>
+3. Create a new IoT device in Azure IoT Hub. <br>
+![Azure_Nodes6](images/Azure_Node6.JPG)
+Enter the device ID, Key, Protocol in Json script from the IoT device into the first function-node for connecting with Azure IOT Cloud Interface. <br>
+  ![Azure_Nodes3](images/Azure_Node3.JPG) <br>
 4. Configure Azure IoT Hub Node: <br>
 •	Enter Protocol and Hostname in Azure IoT Hub Node. <br>
 ![Azure_Nodes4](images/Azure_Node4.JPG) <br>
+5. Deploy the changes and send a message into Azure IoT Hub.
+If your configurationw as correct, teh status of the IoT Hub node should be "Connected" or "Sent message". <br>
+![Azure_Nodes7](images/Azure_Node7.JPG) <br>
+You can also receive messages from the cloud to the device using the "Azure IoT Hub Receiver" node. <br>
+The connection sting can be found in Azure IoT Hub under <br>
+"Settings" > "Shared access policies" > "iothubiwner" > "Primary connection string". <br>
+![Azure_Nodes8](images/Azure_Node8.JPG) <br>
 
-
+>Another Connection-Example can be seen here: [Node-RED Azure Guide](https://flows.nodered.org/node/node-red-contrib-azure-iot-hub#:~:text=node-red-contrib-azure-iot-hub%20is%20a%20Node-RED%20node%20that%20allows%20you,Hub%20Receiver%20and%20Azure%20IoT%20Hub%20Device%20Twin)
 
 <a name="Explorer"></a>
 # Step 4: Integration with Azure IoT Explorer
 
 Azure IoT Explorer is used to verify the data received from the database. <br> 
+1. Go to [Azure IoT explorer releases](https://github.com/Azure/azure-iot-explorer/releases) and expand the list of assets for the most recent release. Download and install the most recent version of the application. <br>
+2. For a device, you can either connect your own device, or use one of the sample simulated devices. For some example simulated devices written in different languages, see the [Connect a sample IoT Plug and Play device application to IoT Hub](https://docs.microsoft.com/en-us/azure/iot-develop/tutorial-connect-device) tutorial. <br>
 Select the device, you want to see data on and click on telemetry. <br>
 Click on "Start" to receive the events. <br>
-![Azure_Nodes5](images/Azure_Node5.JPG) <br>
 
+3. Start IoT Hub and create a new connection "Add connection". <br>
+The connection sting can be found in Azure IoT Hub under <br>
+"Settings" > "Shared access policies" > "iothubiwner" > "Primary connection string". <br>
+![Azure_Nodes9](images/Azure_Node9.JPG) <br>
+
+4. Open up your new connection by clicking on the device ID. <br>
+Open up the "Telemetry" to see if data is beeing send into Microsoft Azure successfully. <BR>
+Start the "Telemetry" by clicking on the "Start" button. <BR>
+![Azure_Nodes10](images/Azure_Node10.JPG) <br>
+
+5. Trigger your Node-RED flows to send data into Microsoft Azure. <br>
+This data should now be visible in the started "Telemetry" connection <br>
+![Azure_Nodes11](images/Azure_Node11.JPG) <br>
 
 <a name="AdditionalLinks"></a>
 # Step 6 : Additional Links
