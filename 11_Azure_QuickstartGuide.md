@@ -26,7 +26,6 @@ This document describes how to connect the Edge-PC EPC 1502 and EPC 1522 running
 -   Registering your IoT device
 -   Provisioning your devices on Device Provisioning service 
 -   Build and deploy Azure IoT SDK on device
--   Please provide introduction and features of your device here
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
@@ -115,11 +114,11 @@ Enter the device ID, Key, Protocol in Json script from the IoT device into the f
 •	Enter Protocol and Hostname in Azure IoT Hub Node. <br>
 ![Azure_Nodes4](images/Azure_Node4.JPG) <br>
 5. Deploy the changes and send a message into Azure IoT Hub.
-If your configurationw as correct, teh status of the IoT Hub node should be "Connected" or "Sent message". <br>
+If your configuration was correct, the status of the IoT Hub node should be "Connected" or "Sent message". <br>
 ![Azure_Nodes7](images/Azure_Node7.JPG) <br>
 You can also receive messages from the cloud to the device using the "Azure IoT Hub Receiver" node. <br>
-The connection sting can be found in Azure IoT Hub under <br>
-"Settings" > "Shared access policies" > "iothubiwner" > "Primary connection string". <br>
+The connection string can be found in Azure IoT Hub under <br>
+"Settings" > "Shared access policies" > "iothubowner" > "Primary connection string". <br>
 ![Azure_Nodes8](images/Azure_Node8.JPG) <br>
 
 >Another Connection-Example can be seen here: [Node-RED Azure Guide](https://flows.nodered.org/node/node-red-contrib-azure-iot-hub#:~:text=node-red-contrib-azure-iot-hub%20is%20a%20Node-RED%20node%20that%20allows%20you,Hub%20Receiver%20and%20Azure%20IoT%20Hub%20Device%20Twin)
@@ -135,7 +134,7 @@ Click on "Start" to receive the events. <br>
 
 3. Start IoT Hub and create a new connection "Add connection". <br>
 The connection sting can be found in Azure IoT Hub under <br>
-"Settings" > "Shared access policies" > "iothubiwner" > "Primary connection string". <br>
+"Settings" > "Shared access policies" > "iothubowner" > "Primary connection string". <br>
 ![Azure_Nodes9](images/Azure_Node9.JPG) <br>
 
 4. Open up your new connection by clicking on the device ID. <br>
