@@ -63,14 +63,14 @@ mounting holes on the mounting surface.
 Order No. [1147464](https://www.phoenixcontact.com/product/1147464) <br>
 1. Install the mounting bracket on the EPC... with the included 
 M3x5 screws so the connectors will be oriented downward after 
-installation. Torque the screws to 0.5 Nm
+installation. Torque the screws to 0.5 Nm.
 2. Angle the EPC 15x2 so the top edge of the mounting plate hangs on 
 the top edge of the DIN rail.
 3. Rotate the EPC 15x2 down against the lower edge of the DIN rail. 
 Press in until the latch snaps closed.
 4. Secure the device on the rail with clamps.
 5. If necessary to remove, release the latch using a screwdriver, rotate the bottom of the EPC away, and then lift it straight up off 
-the DIN rail <br>
+the DIN rail. <br>
 ![EPC_DinRail](images/EPC_DinRail.JPG)
 
 ### Connecting the power supply
@@ -144,12 +144,13 @@ Start the "Telemetry" by clicking on the "Start" button. <BR>
 ![Azure_Nodes10](images/Azure_Node10.JPG) <br>
 
 5. Trigger your Node-RED flows to send data into Microsoft Azure. <br>
-This data should now be visible in the started "Telemetry" connection <br>
+This data should now be visible in the started "Telemetry" connection. <br>
 ![Azure_Nodes11](images/Azure_Node11.JPG) <br>
 
 <a name="AdditionalLinks"></a>
-Additional Links
-Please refer to the below link for additional information for Plug and Play
+# Additional Links
+
+Please refer to the below link for additional information for Plug and Play.
 
 -   [Manage cloud device messaging with Azure-IoT-Explorer](https://github.com/Azure/azure-iot-explorer/releases)
 -   [Azure SDK](https://github.com/Azure/azure-iot-sdk-c/blob/master/provisioning_client/samples/prov_dev_client_sample/prov_dev_client_sample.c)

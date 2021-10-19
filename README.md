@@ -14,20 +14,11 @@ Each example explains one or more topics on how to use Nodes and Function in the
 
 ## Getting Started
 
-1. Download this repository
-2. Remove the .git folder
-3. Adapt the files to your project
-    *  Replace the README.md with your own, the [README_template.md](README_template.md) provides a template for all necessary content.
-    *  Modify the [LICENSE](LICENSE). The recommended license is MIT.
-    *  Name at least two maintainers in the [MAINTAINERS.md](MAINTAINERS.md).
-    *  Tell developers whether its possible to contribute to your project and how to do it in the [CONTRIBUTING.md](CONTRIBUTING.md).
-    *  Check the [CodeOfConduct.md](CodeOfConduct.md) for updates.
-    *  The [SECURITY.md](SECURITY.md) is nessessary in every project, but there is no need to modify it.
-4. Initialize a new local repository or add the changes to your project repository
-
-Ask via [mail](mailto:OSSPLCnext@phoenixcontact.com) for an organisation repository and you will get further information.
-If your project meets all criteria and is validated to be an organizational repository, you are responsible for maintenance. 
-If the project is outdated, we reserve the right to remove it.
+1. Connect the power-supply to your EPC
+2. Connect your Host-PC to X2-LAN, open up your cockpit during the first start-up using the URL: "192.168.2.10/cockpit"
+3. Configure your network. Profinet can only be used with X3-LAN interface.
+   The IP-address can be changed in the "Extended Configuration" tab inside your cockpit.
+4. See the chapter below to create your IoT usecase!
 
 ## Edge-Cockpit
 To start any function on the EPC, make sure your Host-PC is connected via Ethernet and configured in the same network.
