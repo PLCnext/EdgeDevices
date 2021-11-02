@@ -14,8 +14,8 @@ Each example explains one or more topics on how to use Nodes and Function in the
 
 ## Getting Started
 
-1. Connect the power-supply to your EPC
-2. Connect your Host-PC to X2-LAN, open up your cockpit during the first start-up using the URL: "192.168.2.10/cockpit"
+1. Connect the power-supply to your EPC.
+2. Connect your Host-PC to X2-LAN, open up your cockpit during the first start-up using the URL: "192.168.2.10/cockpit".
 3. Configure your network. Profinet can only be used with X3-LAN interface.
    The IP-address can be changed in the "Extended Configuration" tab inside your cockpit.
 4. See the chapter below to create your IoT usecase!
