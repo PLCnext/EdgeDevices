@@ -16,6 +16,6 @@ With Node-RED we can import data from any device in our network, also data from 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [Dashboards](21_Influx_Dashboards.md) | Create Dashboards with InfluxDB <br> Visualise your data with Template Variables |
-|   2  |  [Downsampling Data](22_Influx_Downsampling.md)   |  Ceep the high precision raw data for only a limited time, and store the lower precision, summarized data longer   | 
+|   2  |  [Downsampling Data](22_Influx_Downsampling.md)   |  Save the high precision raw data for only a limited time, and store the lower precision, summarized data longer   | 
 |   3  |  [Alerting](22_Influx_Alerting.md)   |  Create Alerts if a variable is off the intended, create e-mail or server messages   | 
 
