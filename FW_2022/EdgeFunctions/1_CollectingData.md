@@ -15,7 +15,7 @@ By using own-developed nodes for OPC UA and PLCnext REST you can now collect a h
 | 1 | [OPC UA](../Code/Node-RED_Examples/1_OPCUA_Demo.md) | **NEW!** Collect a huge amount of data with just one "OPC UA Tagnode" <BR> Variables from any OPC UA Server can simply be selected from a Drop-Down menu and written into InfluxDB to safe them locally.  |
 | 2 | [PLCnext REST](../Code/Node-RED_Examples/2_REST_Demo.md) | **NEW!** Best solution if you collect data from any PLCnext Controller in the field! <br> Collect a huge amount of data from the PLCnext side of the EPC itself or from multiple PLCnext PLCs in the field. <BR> Variables from any PLCnext device can simply be selected from a Drop-Down menu and written into InfluxDB to safe them locally.  |
 | | |
-| 3 | [Modbus RTU](../../FW_2021_ARCHIVE/SourceCode/Quickstart_Flows/QuickGuideFlows/02_ModbusToInfluxDB.md) | Collect data from Modbus Serial Devices (4-wire to 4-wire RS-485 withou Auto-RTS-Toggle limited) <br> EPC 1522 required  |
+| 3 | [Modbus RTU](../../FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) | Collect data from Modbus Serial Devices (4-wire to 4-wire RS-485 withou Auto-RTS-Toggle limited) <br> EPC 1522 required  |
 | 4 |[Basic Nodes](../../FW_2021_ARCHIVE/01_BasicFlow.md)|Learn Node-RED within the Edge PC with basic node functions. Common and function nodes like "Inject","Debug","Switch" nodes are described.|
 
 
