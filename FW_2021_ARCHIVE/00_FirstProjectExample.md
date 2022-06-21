@@ -18,7 +18,7 @@ This Example Project will show you, how to use all software within the EPC 1502/
 The EPC 1502 and EPC 1522 can be programmed via PLCnext Engineer. Control application can be developed, but also data can be collected through the variety of protocols.
 If you want to import your data from PLCnext Engineer to Node-RED and the internal database of your Edge PC, please refer to the following tutorial.
 
-1. Develop a program in PLCnext and mark the data that you want to import in Node-RED and the internal database InfluxDB as "OPC"-variables.
+1. Develop a program in PLCnext and mark the data that you want to import in Node-RED and the internal database InfluxDB as "OPC"-variables. <br>
 ![OPCvar](images/00_PLCnextOPCVar.JPG)
 
 2. Make sure, you selected that eather "All" variables or the "Marked" varibles from Step 1. are configured to be visible. <br>

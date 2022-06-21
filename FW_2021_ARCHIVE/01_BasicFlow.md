@@ -94,7 +94,7 @@ The “Edit http request node” window contains the following fields:
 - Method: Select the http request method, i.e., GET, POST, PUT, DELETE, HEAD, or the 
 one that is being set by msg.method.
 - URL: Set the http request URL in this field.
-- Payload: Select the appropriate action to be taken with the msg.payload. Available options are: Ignore, append to query string parameter, Send in request body. Select the 
+- Payload: Select the appropriate action to be taken with the msg.payload. Available options are: Ignore, append to query string parameter, Send in request body. Select the 
 desired option from the drop-down box.
 - Return: Select the return type from this field. Options are UTF-8 string, Binary buffer, 
 and Parsed JSON object.

@@ -18,6 +18,8 @@ environments, deploy applications and monitor application performance. <br>
 <br>
 ## How to install Docker-Portainer on my EPC?
 
+>Important! If you updatet your EPC to FW 2022.0, please re-install the new version of Docker-Portainer from the PLCnext Store.
+
 1. Visit the PLCnext Store https://www.plcnextstore.com/977 <br>
 and log in to your PLCnext Store account. If you haven't already, you need to register
 
@@ -50,7 +52,10 @@ unaffected.
 To perform a type 1 reset, open a secure shell session on the PLC, and issue
 the following command:
 
+
 > sudo recover-plcnext 1
+
+> Attention! This will delete all user content as well as any Node-RED or InlfuxDB program! - Make sure you exported all needed files.
 
 1. Log in via Putty to your EPC with Admin credentials
 2. Delete the the contents of the user file system <br>

@@ -8,6 +8,8 @@
 
 SourceCode: [Read data from Modbus Slave](SourceCode/Quickstart_Flows/QuickGuideFlows/Modbus_To_InfluxDB.json)
 
+> Attention! Only 4-wired RS485 devises are supported!
+
 >Note: Please note while importing the Modbus flows use only configuration of own port otherwise it will show the PortNotOpen error for duplicate configurations of same port. Although this is being maintained while editing the Modbus Serial node
 
 ![ModbusSer](images/2_ModbusSer.JPG) <br>

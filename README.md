@@ -1,44 +1,71 @@
-# Edge PC EPC 1502/1522 Quickstart Guide
+## Quick Reference Guide<br>
+### For
+## Phoenix Contact: EPC 1522 and EPC 1502
+ 
+### Version: FW 2022.0.7
+---
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Web](https://img.shields.io/badge/PLCnext-Website-blue.svg)](https://www.phoenixcontact.com/plcnext)
-[![Community](https://img.shields.io/badge/PLCnext-Community-blue.svg)](https://www.plcnext-community.net)
 
-The Edge PC repository is a collection of various sample code for Node-RED for Edge PC:
 
-1185416 – EPC 1502 
 
-1185423 -  EPC 1522 
+![Banner_FW](/FW_2022/images/NewFW_Banner2.JPG) <br>
+FW 2022.0 available, update your EPC now! - The Update File can be found here: <br>
+[EPC 1502 FW2022]() <br>
+[EPC 1522 FW2022]() <BR>
 
-Each example explains one or more topics on how to use Nodes and Function in the pre-installed Node-RED.
 
-## Getting Started
-
-1. Connect the power-supply to your EPC.
-2. Connect your Host-PC to X2-LAN, open up your cockpit during the first start-up using the URL: "192.168.2.10/cockpit".
-3. Configure your network. Profinet can only be used with X3-LAN interface.
-   The IP-address can be changed in the "Extended Configuration" tab inside your cockpit.
-4. See the chapter below to create your IoT usecase!
-
-## Edge-Cockpit
-To start any function on the EPC, make sure your Host-PC is connected via Ethernet and configured in the same network.
-Open up a webbrowser (e.g. Google Chrome) and open-up the Edge-Cockpit:
-<b>ip-adress/cockpit </b>
-(default X2-Ip adress: 192.168.2.10/cockpit) <br>
-
-![Cockpit](images/00_CockpitS.jpg) <br>
+If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/README.md). <br>
 <br>
-<br>
-## Quickstart-Guide
+
+## Complete Guide for FW 2022.0:
+
+#1 SET UP YOUR EPC:
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 0 | [Introduction to EPC & Cockpit](99_EPC15x2_Introduction.md) | Benefits of Edge Computing <br> Functions and Features of your EPC 15x2 |
-|   1  |  [Node-RED](07_Node-RED_HowTo.md)   |  Learn Node-RED within the Edge PC with basic node functions <br> Guidance on how to connect PLCnext with Node-RED and InfluxDB  <br> Collection of Example Flows   | 
-|  2   | [InfluxDB Database](09_InfluxDB.md)    | Configuration of the InfluxDB database <br> How to create a dashboard <br> How to create an alert management  |
-|  3   | [Docker-Portainer](08_DockerPortainer.md)    | Installation of Docker Portainer on your EPC <br> How to deplay containers  | 
-|  4   | [AWS Quickstart Guide](10_AWS_QuickstartGuide.md)    | Quickstart and Information how to connect your EPC 15x2 to AWS Cloud <br> Using Pre-installed MQTT nodes to connect to AWS  | 
-|  5   | [Mircosoft Azure Quickstart Guide](11_Azure_QuickstartGuide.md)    | Quickstart and Information how to connect your EPC 15x2 to Microsoft Azure Cloud <br> Using Pre-installed MQTT nodes to connect to Azure  | 
+| 1 | [Introduction](FW_2022/99_Introduction_FW2022.md) | Benefits of Edge Computing <br> Functions and Features of your EPC 15x2 with Firmware 2022.0 |
+| 2 | [Firmware-Update to 2022.0](/FW_2022/Configuration/2_FirmwareUpdate.md) | Instruction on how to update your EPC to FW 2022.0 
+|   3  |  [Configurations](FW_2022/Configuration/0_Installation.md)   |  First steps with your EPC,[Installing the Device](FW_2022/Configuration/0_Installation.md), Functions of the new [Edge-Cockpit](FW_2022/Configuration/1_EdgeCockpit.md), [Network-Configuration](/FW_2022/Configuration/3_Network_Configuration.md), Profinet, [WLAN (wireless)](/FW_2022/Configuration/3_Network_Configuration.md) and configuration of your Interfaces like [DisplayPort](/FW_2022/Configuration/4_DisplayPort.md) and [USB-Ports](/FW_2022/Configuration/5_USB.md) | 
+|
+
+<br>
+
+#2 COLLECT DATA FROM THE FIELD
+
+|   #  |  Topic   |  Content   |     |
+| --- | --- | --- | --- |
+| 2 | [Collect data](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/HW02/Code/Node-RED_Examples/2_REST_Demo.md), [OPC UA](/HW02/Code/Node-RED_Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
+
+#3 ANALYSE AND PROCESS DATA LOCAL IN INFLUXDB 2.0
+|   #  |  Topic   |  Content   |     |
+| --- | --- | --- | --- |
+| 1 | [Set up InfluxDB 2.0 Database](/FW_2022/Code/Influx2/Influx_Configuration.md) | Set up your Organisation and Secuity settings, create a bucket to store data from the field inside the database | 
+|2| [Alerting](/FW_2022/Code/Influx2/InfluxDB_Alerts.md) | Analyse your data with a "threshold check" or a "deadman check", send alerts via a handler  | 
+|3| [Downsampling](/FW_2022/Code/Influx2/Downsampling_Data.md) | Downsample your incoming data to reduce memory space and store data for an unlimited time period | 
+|4| [Telegraf](/FW_2022/Code/Influx2/Telegraf_Configuration.md) | Configure InfluxDB 2.0 Telegraf agent for collecting and reporting metrics with a vast library of input plugins |
+
+#4 SEND DATA TO ANY CLOUD
+|   #  |  Topic   |  Content   |     |
+| --- | --- | --- | --- |
+| 1 | [InfluxDB to any Cloud](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it into any Cloud. |
+| 2 | [InfluxDB to Proficloud.io](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it to Phoenix Contact's Proficloud.io. <br> Free of charge for up to 20 metrics!  |
+| 3 | [Set up your EPC for AWS](/10_AWS_QuickstartGuide.md) | Complete set up for AWS Cloud |
+| 4 | [Set up your EPC for MS Azure](/11_Azure_QuickstartGuide.md) | Complete set up for Microsoft Azure Cloud|
+
+#5 USE PLCNEXT ENGINEER FOR IEC-61131 PROGRAMMING 
+
+|   #  |  Topic   |  Content   |     |
+| --- | --- | --- | --- |
+| 1 | [IEC programming with PLCnext Engineer](/FW_2022/Code/PLCnext%20Engineer/1_UsePLCnextEngineer.md) | Use your EPC for IEC-61131 programming, import your EPC to PLCnext Engineer, insert the EPC to an existing project|
+
+
+#6 DOCKER-PORTAINER APP 
+|   #  |  Topic   |  Content   |     |
+| --- | --- | --- | --- |
+| 1 | [Install Portainer App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
+
+
+
 
 ## Contributing
 
