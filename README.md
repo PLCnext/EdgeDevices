@@ -10,16 +10,16 @@
 
 ![Banner_FW](/FW_2022/images/NewFW_Banner2.JPG) <br>
 FW 2022.0 available, update your EPC now! - The Update File can be found here: <br>
-[EPC 1502 FW2022]() <br>
-[EPC 1522 FW2022]() <BR>
+[EPC 1502 FW2022](www.phoenixcontact.com/product/1185416) <br>
+[EPC 1522 FW2022](www.phoenixcontact.com/product/1185423) <BR>
 
 
 If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/README.md). <br>
 <br>
 
-## Complete Guide for FW 2022.0:
+# Complete Guide for FW 2022.0:
 
-#1 SET UP YOUR EPC:
+***#1 SET UP YOUR EPC:***
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
@@ -30,13 +30,13 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 
 <br>
 
-#2 COLLECT DATA FROM THE FIELD
+***#2 COLLECT DATA FROM THE FIELD***
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 2 | [Collect data from the field](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/HW02/Code/Node-RED_Examples/2_REST_Demo.md), [OPC UA](/HW02/Code/Node-RED_Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
 
-#3 ANALYSE AND PROCESS DATA LOCAL IN INFLUXDB 2.0
+***#3 ANALYSE AND PROCESS DATA LOCAL IN INFLUXDB 2.0***
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [Set up InfluxDB 2.0 Database](/FW_2022/Code/Influx2/Influx_Configuration.md) | Set up your Organisation and Secuity settings, create a bucket to store data from the field inside the database | 
@@ -44,7 +44,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 |3| [Downsampling](/FW_2022/Code/Influx2/Downsampling_Data.md) | Downsample your incoming data to reduce memory space and store data for an unlimited time period | 
 |4| [Telegraf](/FW_2022/Code/Influx2/Telegraf_Configuration.md) | Configure InfluxDB 2.0 Telegraf agent for collecting and reporting metrics with a vast library of input plugins |
 
-#4 SEND DATA TO ANY CLOUD
+***#4 SEND DATA TO ANY CLOUD***
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [Influx to any Cloud](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it into any Cloud. |
@@ -52,14 +52,14 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 | 3 | [Set up your EPC for AWS](/10_AWS_QuickstartGuide.md) | Complete set up for AWS Cloud |
 | 4 | [Set up your EPC for MS Azure](/11_Azure_QuickstartGuide.md) | Complete set up for Microsoft Azure Cloud|
 
-#5 USE PLCNEXT ENGINEER FOR IEC-61131 PROGRAMMING 
+***#5 USE PLCNEXT ENGINEER FOR IEC-61131 PROGRAMMING***
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [IEC programming with PLCnext Engineer](/FW_2022/Code/PLCnext%20Engineer/1_UsePLCnextEngineer.md) | Use your EPC for IEC-61131 programming, import your EPC to PLCnext Engineer, insert the EPC to an existing project|
 
 
-#6 DOCKER-PORTAINER APP 
+***#6 DOCKER-PORTAINER APP*** 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [Install Portainer App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |

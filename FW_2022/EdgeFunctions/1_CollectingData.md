@@ -10,7 +10,7 @@ By using own-developed nodes for OPC UA and PLCnext REST you can now collect a h
 **Please select the Protocoll you require, a detailed explaination with Source Code will then open** 
 
 
-   #  |  Topic   |  Content   |   
+   #  |  Protocol to collect data   |  Content   |   
 | --- | --- | --- | 
 | 1 | [OPC UA](../Code/Node-RED_Examples/1_OPCUA_Demo.md) | **NEW!** Collect a huge amount of data with just one "OPC UA Tagnode" <BR> Variables from any OPC UA Server can simply be selected from a Drop-Down menu and written into InfluxDB to safe them locally.  |
 | 2 | [PLCnext REST](../Code/Node-RED_Examples/2_REST_Demo.md) | **NEW!** Best solution if you collect data from any PLCnext Controller in the field! <br> Collect a huge amount of data from the PLCnext side of the EPC itself or from multiple PLCnext PLCs in the field. <BR> Variables from any PLCnext device can simply be selected from a Drop-Down menu and written into InfluxDB to safe them locally.  |
