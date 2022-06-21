@@ -34,7 +34,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 2 | [Collect data](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/HW02/Code/Node-RED_Examples/2_REST_Demo.md), [OPC UA](/HW02/Code/Node-RED_Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
+| 2 | [Collect data from the field](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/HW02/Code/Node-RED_Examples/2_REST_Demo.md), [OPC UA](/HW02/Code/Node-RED_Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
 
 #3 ANALYSE AND PROCESS DATA LOCAL IN INFLUXDB 2.0
 |   #  |  Topic   |  Content   |     |
@@ -47,8 +47,8 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 #4 SEND DATA TO ANY CLOUD
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 1 | [InfluxDB to any Cloud](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it into any Cloud. |
-| 2 | [InfluxDB to Proficloud.io](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it to Phoenix Contact's Proficloud.io. <br> Free of charge for up to 20 metrics!  |
+| 1 | [Influx to any Cloud](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it into any Cloud. |
+| 2 | [Influx to Proficloud.io](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it to Phoenix Contact's Proficloud.io. <br> Free of charge for up to 20 metrics!  |
 | 3 | [Set up your EPC for AWS](/10_AWS_QuickstartGuide.md) | Complete set up for AWS Cloud |
 | 4 | [Set up your EPC for MS Azure](/11_Azure_QuickstartGuide.md) | Complete set up for Microsoft Azure Cloud|
 

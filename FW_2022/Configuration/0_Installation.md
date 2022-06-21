@@ -2,6 +2,7 @@
 
 ## Installation
 <br>
+
 ### What is new with FW 2022.0?
 
 A lot of very exciting thing got into the new Firmware!
@@ -12,6 +13,13 @@ We made sure, that collecting data from the field is now as easy as never. - Wit
 <br>
 <br>
 
+**Find configurations for your device:** <br>
+#1 Installing your device  :    [chapter below]() <BR>
+#2 Using the new Edge Cockpit to start-up Settings, Node-RED, InfluxDB, Docker-portainer, ... [Chapter Edge Cockpit](1_EdgeCockpit.md) <br>
+#3 Network and WIFI Configuration [Chapter Network Configurations](3_Network_Configuration.md) <br>
+#4 Using the DisplayPort to output a local Visualisation or set configurations [Chapter DisplayPort](4_DisplayPort.md) <br>
+#5 Using the USB-Ports [Chapter USB-Ports](5_USB.md) <br>
+<br>
 # 
 ## Datasheet
 A datasheet can be found on the official Phoenix Contact homepage: <br>
