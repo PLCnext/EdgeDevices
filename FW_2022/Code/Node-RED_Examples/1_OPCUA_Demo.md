@@ -24,7 +24,7 @@ Also, further extand the configuration (Pencil button) and set the required secu
 ![UA_TagnodeConfig2](../../images/UA_TagnodeConfig2.JPG)
 
 3. Configure the OPC UA Client node
-Configure the "OPC UA Client" node and set the same "Endpoint" and "Topic" and Security settings.
+Configure the "OPC UA Client" node and set the same "Endpoint" and "Topic" and Security settings. <br>
 
 4. Configure the "InfluxDB Batch Insert" node. Set up your organisation and bucket-name as you have [configured it in InfluxDB](../Influx2/Influx_Configuration.md) <br>
 
@@ -33,7 +33,7 @@ Configure the "OPC UA Client" node and set the same "Endpoint" and "Topic" and S
 The OPC UA Taglist should show the status "Done", the OPC UA Client should show the status "session active".
 2. If the OPC UA Client successfully connected to the OPC UA Server, the OPC UA Tagnode should now list all available OPC UA variables found on the server. <br> Select all required variables in the list, accept by clicking "Done". <br>
 ![OPCUA_Tagnode_Vars](../../images/OPCUA_Tagnode_Vars.JPG). <br>
-3. In my example, 10 variables are read. Since those 10 variables should be written into InfluxDB in an Array, the node "Combine multiple output into one" has to be set to 10 messages:
+3. In my example, 10 variables are read. Since those 10 variables should be written into InfluxDB in an Array, the node "Combine multiple output into one" has to be set to 10 messages: <br>
 ![Combine_REST](../../images/Combine_REST.JPG) <br>
 
 

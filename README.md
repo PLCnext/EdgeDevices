@@ -19,7 +19,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 
 # Complete Guide for FW 2022.0:
 
-***#1 SET UP YOUR EPC:***
+***#1 SET UP YOUR EPC***
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |

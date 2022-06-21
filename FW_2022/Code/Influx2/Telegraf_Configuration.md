@@ -19,13 +19,13 @@ In this example, Telegraf is configured to then track system measurements like C
 8.	Copy your Telegraf token. You can find it under Data->Tokens <br>
 ![Telegraf_Token](../../images/Telegraf_Token.JPG) <br>
 
-9. Click on your Telegraf entry
+9. Click on your Telegraf entry <br>
 ![Telegraf_System](../../images/Telegraf_System.JPG) <br>
 10. Edit the telegraf configuration <br>
     a.	Add “insecure_skip_verify=true” under the “urls” setting if using a self-signed certificate <br>
     b.	Paste the token value into token = “[value of token]” <br>
 
-    ![Telegraf_Edit](../../images/Telegraf_Edit.JPG)
+    ![Telegraf_Edit](../../images/Telegraf_Edit.JPG) <br>
 
 11. Save the changes and press “download config” <br>
 ![Telegraf_Changes](../../images/Telegraf_SaveChanges.JPG) <br>
@@ -37,13 +37,13 @@ and replace the contents of "telegraf.conf" with the config file you downloaded 
 
 13. Reboot your EPC
 
-14. As a result, you now should be able to track all available system-variables in your bucket "System".
+14. As a result, you now should be able to track all available system-variables in your bucket "System". <br>
 ![Telegraf_Explorer](../../images/Telegraf_Explorer.JPG) <br>
 
 
 15. You can use a pre-defined dashboard in InlfuxDB, called "System" with all a lot of relevant data already configured. <br>
     a.) Navigate to "Boards" and open up the "System" board.
-    b.) You might have to set the name of your bucket (In my example "system" to each cell.)
+    b.) You might have to set the name of your bucket (In my example "system" to each cell.) <br>
     ![Board_SystemConf](../../images/Board_SystemConf.JPG) <br>
 
     ![Board_SystemConf2](../../images/Board_SystemConf2.JPG) <br>
