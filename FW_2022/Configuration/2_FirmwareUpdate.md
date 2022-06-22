@@ -16,8 +16,8 @@ Make sure your device has a hardware revision of at least HW01. <br>
 ![HW_RevWBM](../images/Update_Ausgangslage.JPG) <br>
 
 2. Download the "PreUpdate App" from the [PLCnext Store](https://www.plcnextstore.com/eu/app/1564). <br>
-   Download the "UpdateFile.raucb" from the Phoenix Contact Homepage: <br> [EPC 1502 FW2022](www.phoenixcontact.com/product/1185416) <br>
-   [EPC 1522 FW2022](www.phoenixcontact.com/product/1185423) <BR>
+   Download the "UpdateFile.raucb" from the Phoenix Contact Homepage: <br> [EPC 1502 FW2022](https://www.phoenixcontact.com/product/1185416) <br>
+   [EPC 1522 FW2022](https://www.phoenixcontact.com/product/1185423) <BR>
 
 3. Install the App "PreUpdate 2022" via the WBM. Select the rauc.b Update-File and press "Start". <br>
 Your EPC will reboot and and sets the necessary changes for the update. <BR>
@@ -35,5 +35,5 @@ Once the EPC is done installing, reconnect to the WBM and check if FW 2022.0 is 
    
    <br>
    <br>
-   
+
 Please see next chapter: [EdgeCockpit](1_EdgeCockpit.md) <br>

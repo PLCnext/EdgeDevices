@@ -10,8 +10,10 @@
 
 ![Banner_FW](/FW_2022/images/NewFW_Banner2.JPG) <br>
 FW 2022.0 available, update your EPC now! - The Update File can be found here: <br>
-[EPC 1502 FW2022](www.phoenixcontact.com/product/1185416) <br>
-[EPC 1522 FW2022](www.phoenixcontact.com/product/1185423) <BR>
+
+[EPC 1502 FW2022](https://www.phoenixcontact.com/product/1185416) <br>
+
+[EPC 1522 FW2022](https://www.phoenixcontact.com/product/1185423) <BR>
 
 
 If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/README.md). <br>
