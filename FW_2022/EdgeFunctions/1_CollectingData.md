@@ -24,7 +24,7 @@ By using own-developed nodes for OPC UA and PLCnext REST you can now collect a h
 1. Open-up and copy the source code (just the long string) of any example-flow (CNTRL + C) <br>
 ![CopyFlow](../../FW_2021_ARCHIVE/images/N_ExampleCopy.JPG)
 2. <p> Connect to your Edge-PC via Ethernet and open the Edge-Cockpit. <br>
-    Default: http://192.168.2.10/cockpit </p>
+    Default: http://192.168.2.10/wbm </p>
 3. <p> Open Node-RED </p>
 4. Click on the "Import" button on the right upper corner. <br>
 ![Import_Flow](../../FW_2021_ARCHIVE/images/Import_Node.jpg) </p>
