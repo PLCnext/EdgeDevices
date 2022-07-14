@@ -28,7 +28,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 | 1 | [Introduction](FW_2022/99_Introduction_FW2022.md) | Benefits of Edge Computing <br> Functions and Features of your EPC 15x2 with Firmware 2022.0 |
 | 2 | [Firmware-Update to 2022.0](/FW_2022/Configuration/2_FirmwareUpdate.md) | Instruction on how to update your EPC to FW 2022.0 
 |   3  |  [Configurations](FW_2022/Configuration/0_Installation.md)   |  First steps with your EPC,[Installing the Device](FW_2022/Configuration/0_Installation.md), Functions of the new [Edge-Cockpit](FW_2022/Configuration/1_EdgeCockpit.md), [Network-Configuration](/FW_2022/Configuration/3_Network_Configuration.md), Profinet, [WLAN (wireless)](/FW_2022/Configuration/3_Network_Configuration.md) and configuration of your Interfaces like [DisplayPort](/FW_2022/Configuration/4_DisplayPort.md) and [USB-Ports](/FW_2022/Configuration/5_USB.md) | 
-|
+
 
 <br>
 
@@ -43,8 +43,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 | --- | --- | --- | --- |
 | 1 | [Set up InfluxDB 2.0 Database](/FW_2022/Code/Influx2/Influx_Configuration.md) | Set up your Organisation and Secuity settings, create a bucket to store data from the field inside the database | 
 |2| [Alerting](/FW_2022/Code/Influx2/InfluxDB_Alerts.md) | Analyse your data with a "threshold check" or a "deadman check", send alerts via a handler  | 
-|3| [Downsampling](/FW_2022/Code/Influx2/Downsampling_Data.md) | Downsample your incoming data to reduce memory space and store data for an unlimited time period | 
-|4| [Telegraf](/FW_2022/Code/Influx2/Telegraf_Configuration.md) | Configure InfluxDB 2.0 Telegraf agent for collecting and reporting metrics with a vast library of input plugins |
+|3| [Telegraf](/FW_2022/Code/Influx2/Telegraf_Configuration.md) | Configure InfluxDB 2.0 Telegraf agent for collecting and reporting metrics with a vast library of input plugins |
 
 ***#4 SEND DATA TO ANY CLOUD***
 |   #  |  Topic   |  Content   |     |
@@ -61,10 +60,12 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 | 1 | [IEC programming with PLCnext Engineer](/FW_2022/Code/PLCnext%20Engineer/1_UsePLCnextEngineer.md) | Use your EPC for IEC-61131 programming, import your EPC to PLCnext Engineer, insert the EPC to an existing project|
 
 
-***#6 DOCKER-PORTAINER APP*** 
+***#6 APPS*** 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 1 | [Install Portainer App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
+| 1 | [Docker-Portainer App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
+| 2 | [NEW! Device and Update Management App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
+
 
 
 
