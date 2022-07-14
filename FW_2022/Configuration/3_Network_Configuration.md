@@ -23,14 +23,17 @@ Make sure the antenna is installed on your EPC.
 To configure the WIFI, switch to the "Edge" tab in WBM and choose "Settings" <br>
 ![ConfigWIFI](../images/Config_WIFI.JPG) <br>
 Switch to "Network Configuration". <br>
-Since the EPC does not support DHCP yet, we have to set the IP-address of the WIFI ourself. <br>. Therefore you need to know your IP network address area. <br>
+Since the EPC does not support DHCP yet, we have to set the IP-address of the WIFI ourself. <br> Therefore you need to know your IP network address area. <br>
 
-In the example shown below (network address area 192.168.178.x), I set the IP address to 192.168.178.94 and set the default gateway to the IP address of the router. <br>
-You also have to to set the name of your WIFI and also the password of your WIFI. <br>
+In the example shown below (network address area 192.168.178.x), I set the IP address to 192.168.178.94 and set the default gateway. <br>
+You also have to to set the name and also the password of your WIFI. <br>
 ![ConfigWIFI2](../images/Config_WIFI2.JPG) <br>
 If your configuration is correct, the status should change to "connected" after a reboot.
 
-If you have set all configurations, you can switch to the next chapter: [Using the Edge Cockpit]
+## Important for internet access via X1, X2 or WIFI
+Regardless of whether the connection was configured physically via ETH X1, ETH X2 or via WIFI to the router to access the internet, the "Default Route" has to be set in "Edge" --> "Settings". <br>
+Set the "Default Route" to the port that is to connect to the Internet via the default gateway. <br>
+![NetworkRoute](../images/NetworkRoute.png) <br>
 
 <BR >
 <br>

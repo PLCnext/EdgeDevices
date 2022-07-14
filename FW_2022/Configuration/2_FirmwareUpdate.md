@@ -2,6 +2,7 @@
 
 ## Firmware Update from FW 2021.0.7 to FW 2022.0
 <br>
+
 >Attention! The Update to FW 2022.0 can only be done with >HW01 devices!
 
 To be able to explore all new features of the FW 2022.0, you might have to update your EPC before. <br>
