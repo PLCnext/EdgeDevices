@@ -64,7 +64,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [Docker-Portainer App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
-| 2 | [NEW! Device and Update Management App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
+| 2 | [NEW! Device and Update Management App](/FW_2022/Apps/DeviceAndUpdateManagement.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
 
 
 
