@@ -1,6 +1,6 @@
 # Quick Reference Guide<br>
 
-## Firmware Update from FW 2021.0.7 to FW 2022.0
+## Device and Update Management App
 <br>
 
 
