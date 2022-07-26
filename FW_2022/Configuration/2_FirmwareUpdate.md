@@ -5,7 +5,10 @@
 
 >Attention! The Update to FW 2022.0 can only be done with >HW01 devices!
 
-To be able to explore all new features of the FW 2022.0, you might have to update your EPC before. <br>
+> Attention, your data currently stored in InfluxDB 1.8 will be lost after the Update to InfluxDB 2.0! <br>
+If you have an existing project with FW2021.0, you must configure InfluxDB as follows after the update: [Configure InfluxDB 2.0 and Node-RED](../Code/Influx2/Influx_Configuration.md).
+
+To be able to explore all new features of the FW 2022.0, you might have to update your EPC. <br>
 
 Due to the large amount of changes and improvements made by the firmware update, a little manual pre-preparations are needed beforehand. <br>
 
@@ -29,9 +32,12 @@ Browse the previous downloaded (.raucb) Firmware-file and press "Start". <br>
 ![Update_Firmware](../images/Update_Firmware.jpg) <br>
 Once the EPC is done installing, reconnect to the WBM and check if FW 2022.0 is now installed. <br>
 
+5. OPTIONAL <br>
+Since the "PreUpdate" App is no longer needed, the App can be stopped and deleted from the system. 
+
 > Do not shut-off the power while the EPC is updating! The EPC will restart automatically.
 
-> Attention, your data currently stored in InfluxDB 1.8 will be lost after the Update to InfluxDB 2.0!
+
 
    
    <br>
