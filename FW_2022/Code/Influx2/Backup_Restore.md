@@ -2,9 +2,9 @@
 
 ## InfluxDB 2.0 Backup & Restore database to Host-PC
 
-In order to be able to analyze data of your machine over a period of months, it can be useful to create a "backup" and to be able to save and view it on the Windows host PC as well "restore".
-
-With this tutorial, you'll save a bucket filled with data, store it on your local host PC and visualize this data in InfluxDB on your host PC.
+In order to be able to analyze data of your machine over a period of months, it can be useful to create a "backup" of your EPC-data and to be able to save and view it on your Windows-Host-PC "restore". <br>
+<br>
+With this tutorial, you'll save a bucket filled with data of your EPC, store it on your local Host-PC and visualize this data in InfluxDB on your Host-PC.
 
 1. Download the InfluxDB CLI Tool and InfluxDB Runtime via [this link](https://dl.influxdata.com/influxdb/releases/influxdb2-2.0.7-windows-amd64.zip) from Influx data.
 > Attention, linked is version 2.0.7 which is required. A newer version might not work.
@@ -24,11 +24,11 @@ Write the command: <br>
 4. A backup should now be created any copied to your target directory of your Host-PC. <br>
 ![BackedUp-Files](../../images/BackupRestore_3.jpg) <br>
 
-5. Since the data is now on the host PC, we need to start the InfluxDB runtime to be able to view it. <br>
+5. Since the data is now on the Host-PC, we need to start the InfluxDB runtime to be able to view it. <br>
 To do so, go back to the previously downloaded and unzipped folder and start a new CMD console. <br>
 ![Backup_Files2](../../images/BackupRestore_4.jpg) <br>
 
-6. Start the InfluxDB Runtime and Crhonograf on your Host-PC using this command: <br>
+6. Start the InfluxDB Runtime and Chronograf on your Host-PC using this command: <br>
 
         influxd.exe
 
@@ -40,7 +40,7 @@ A setup will occur when first starting InfluxDB. Set a user and password. <br>
 ![FirstStartInflux](../../images/BackupRestore_6.jpg) <br>   
 
 8. Once finished, we now want to restore the data from the EPC. <br>
-First, go to "Data" --> "Tokens" and copy the value of the "admin's Token". <br>
+First, go to "Data" --> "Tokens" and copy the value of the "admin's Token" of your Host-PC. <br>
 ![AdminToken_HostPC](../../images/BackupRestore_7.jpg) <br>   
 
 9. In order to restore the data copied from the EPC into the InfluxDB of your Host-PC, we need to open up another CMD prompt from the downloaded and unziped folder before. <br>
@@ -60,3 +60,5 @@ Refresh your InfluxDB Chronograf (https://127.0.0.1:8086) and find the new bucke
 Inside that bucket, all data from the EPC can be found and analysed as well as stored inside the Host-PC. <br>
 
 ![RestoredBucketfromEPC2](../../images/BackupRestore_10.jpg) <br>
+
+Further interested? - Please also see chapter: [Working with InfluxDB Alerts](/FW_2022/Code/Influx2/InfluxDB_Alerts.md) <br>
