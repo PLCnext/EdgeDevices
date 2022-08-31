@@ -37,8 +37,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [Collect data from the field](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/HW02/Code/Node-RED_Examples/2_REST_Demo.md), [OPC UA](/HW02/Code/Node-RED_Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
-| 2 | Examples with Node-RED | [NEW! Read data from Node-RED and store it in a local CSV-file](/FW_2022/Code/Node-RED_Examples/3_Read_Data_from_InfluxDB_to_CSV.md) <br> [NEW! Send a daily report (CSV) via E-Mail](/FW_2022/Code/Node-RED_Examples/4_Send_CSV_via_Email.md)
-|
+| 2 | Examples with Node-RED | [NEW! Read data from Node-RED and store it in a local CSV-file](/FW_2022/Code/Node-RED_Examples/3_Read_Data_from_InfluxDB_to_CSV.md) <br> [NEW! Send a daily report (CSV) via E-Mail](/FW_2022/Code/Node-RED_Examples/4_Send_CSV_via_Email.md)|
 
 ***#3 ANALYSE AND PROCESS DATA LOCAL IN INFLUXDB 2.0***
 |   #  |  Topic   |  Content   |     |
@@ -61,7 +60,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [IEC programming with PLCnext Engineer](/FW_2022/Code/PLCnext%20Engineer/1_UsePLCnextEngineer.md) | Use your EPC for IEC-61131 programming, import your EPC to PLCnext Engineer, insert the EPC to an existing project|
-| 2 | [IEC example project](/FW_2022/Code/PLCnext%20Engineer/1_UsePLCnextEngineer.md) | Use your EPC for IEC-61131 programming, import your EPC to PLCnext Engineer, insert the EPC to an existing project|
+
 
 
 ***#6 APPS*** 
