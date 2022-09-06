@@ -9,7 +9,7 @@ With this tutorial, you'll save a bucket filled with data of your EPC, store it 
 1. Download the InfluxDB CLI Tool and InfluxDB Runtime via [this link](https://dl.influxdata.com/influxdb/releases/influxdb2-2.0.7-windows-amd64.zip) from Influx data.
 > Attention, linked is version 2.0.7 which is required. A newer version might not work.
 
-2. Once downloaded, unzip the file and save the contant to a local folder on your Host-PC. <br>
+2. Once downloaded, unzip the file and save the content to a local folder on your Host-PC. <br>
 ![Backup_Files](../../images/BackupRestore_4.jpg) <br>
 
 3. Open up a Comand-promt (CMD). You can do so by entering "cmd" in the folder. <br>
