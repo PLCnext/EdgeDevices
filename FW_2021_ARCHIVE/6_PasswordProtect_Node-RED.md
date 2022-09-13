@@ -8,42 +8,23 @@ By default, the Node-RED editor is not secured - anyone who can access its IP ad
 
 This is only suitable if you are running on a trusted network. <br>
 
-1. Open a new SSH-session (for example using PuTTy). You need to log-in as "Root".  <br> If you already have created a root user before, skip this step and just log in as "Root" <br> 
-If you need to create a new "Root" user, use this command: <br>
+1. Open a new SSH-session (for example using PuTTy). <br>
+Navigate to the folder /opt/plcnext/edge/nodejs/bin and create a new node-red hash-password using this commands: <br>
 
-        sudo passwd root
-
-    Write any password you want to give to the root user. The new passwort has to be created twice. <br>
-    ![Node-RED_Passwd2022_Root](../images/Root_Example.png) <br>
-    After creating a root user, log-in as root using this command: <BR>
-
-        su
-
-1. This step needs to be written as "Root" user! <br>
-Navigate to the folder /opt/plcnext/edge/nodejs/bin and create a new node-red <br> hash-password using this commands: AS ROOT! <br>
 
         cd /opt/plcnext/edge/nodejs/bin
-        ln -s /opt/plcnext/edge/nodejs/bin/node /usr/bin/node
-        ln -s /opt/plcnext/edge/nodejs/node-red /usr/bin/node-red
-        exit
-
-         
-    ![Node-RED_Passwd2022_1](../images/Node-RED_Passwd2022.jpg) <br>
-
-    Now that we linked the correct folders and permissions and logged of the "Root" user, write the following command to link a user-defined password to a hash-password: <br>
-
-        node-red admin hash-pw
-
+        ./node-red admin hash-pw
     
     As soon as an input mask appears, type a password of your choice into it. <br>
     In my case, I choose "admin" to be the password (not recommended of course): <br>
     
-    ![Node-RED_Password2](../images/Node-RED_Passwd2022_3.jpg) <br>
+    ![Node-RED_Password2](../images/Node-RED_Password2.jpg) <br>
+
     A new generated "node-red hash-pw" will be generated. <br>
-    Copy the hash-pw (long string starting with a $) <br>
-     
+    Copy the has-pw (long string starting with a $) <br>
     
-2. In this step, it is required to open a WinSCP session to your EPC. <br>
+    
+2. Open up a new WinSCP Connection. <br>
 Open the file "settings.js" inside the EPC /opt/plcnext/.node-red/ <br>
 ![Node-RED_SettingsFile](../images/Node-RED_Password1.JPG) <br>
 Inside the file, navigate to the chapter "Securing Node-RED" which is currently commented out. <br>
