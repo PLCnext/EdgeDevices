@@ -51,8 +51,8 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 ***#4 SEND DATA TO ANY CLOUD***
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 1 | [Influx to any Cloud](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it into any Cloud. |
-| 2 | [NEW! Influx to Proficloud.io](/FW_2022/Code/Cloud/InfluxDB_to_Proficloud.md | Read data from InfluxDB and send it to Phoenix Contact's Proficloud.io. <br> Free of charge for up to 20 metrics!  |
+| 1 | [NEW! Influx to Proficloud.io](/FW_2022/Code/Cloud/InfluxDB_to_Proficloud.md) | Read data from InfluxDB and send it to Phoenix Contact's Proficloud.io. <br> Free of charge for up to 20 metrics!  |
+| 2 | [Influx to any Cloud](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it into any Cloud. |
 | 3 | [Set up your EPC for AWS](/10_AWS_QuickstartGuide.md) | Complete set up for AWS Cloud |
 | 4 | [Set up your EPC for MS Azure](/11_Azure_QuickstartGuide.md) | Complete set up for Microsoft Azure Cloud|
 
