@@ -13,34 +13,27 @@ Especially start the courses: <br>
 and <br>
 [Connect the Machine Manager to Proficloud.io](https://proficloud.io/e-learning/connect-the-machine-manager-to-proficloud-io/)
 
-To follow on directly from the last point of the course "Connect the Machine Manager" this section will describe in more detail how to read out the internal InfluxDB database and send the data to the Proficloud. <br>
+1. Inside the Proficloud.io, create a new "Virtual Device" to create a new UUID. <br> This process is also descibed in the above links. <BR>
+2. Import the [JSON SourceCode](../Node-RED/InfluxToProficloud.json) in Node-RED. <br>
+![Influx_to_Proficloud1](../../images/Influx_PCloud1.JPG) <br>
+3. Set the vitual UUID you just created inside the "ProficloudDevice" Node. <br>
+4. Configure the InfluxDB "Read data" node. <br>
+In my example, all data inside the bucket "PLCnext" will be read. <br>
+The data of the last 10 seconds "(start: -10s, stop: -1s)" are summarized in a sampling rate of 1s "every 1s, fn: mean". <br>
+Change the settings according to your application. <br>
+![Influx_to_Proficloud2](../../images/Influx_PCloud2.JPG) <BR>
+<BR>
+If you want to only read some data out of a single InfluxDB bucket, you can do so by setting filters inside the query. <br>
+![Influx_to_Proficloud3](../../images/Influx_PCloud3.JPG) <br>
 
-Once you created a virtual device in Proficloud.io, import the attached SourceCode in Node-RED to read data from your InfluxDB bucket and send those data into Proficloud. <br>
+5. Read the data from InfluxDB and write data into Proficloud.io using the inject node "timestamp".
 
-![Proficloud_SourceCode](../../images/Proficloud_SourceCode.JPG) <br>
-
-The "InfluxDB IN" node will be used to read data from the internal InfluxDB database. Configure the organisation, and set the admin token as described in the [InfluxDB Configuration](../Influx2/Influx_Configuration.md). <br>
-Inside the Query, the path to the data must be set. <br>
-Set the bucket-name, the retention-policy and the name of your data. <br>
-
-
-![Proficloud_SourceCode](../../images/Proficloud_NodeSettings.JPG) <br>
-
-The function nodes have to configured to massage the data to a data format that Proficloud.io can work with. <br>
-
-In the Proficloud node, you only have to set the UUID you generated before in Proficloud.io <br>
-
-![Proficloud_UUIDSettings](../../images/Proficloud_UUIDSettings.JPG) <br>
-
-Once deployed, your Proficloud-Node should change its status from "connecting" to "connected".  <br>
-If a error occurs, please check that your EPC has an internet connection. <br>
-
-If everything was configured correct, switch to Proficloud.io and assign your metrics. <br> Each variable send to the cloud has to assigned to a metric to be able to log those inside the Time Series Data Base of the Prodicloud.io. <br>
+If everything was configured correct, switch to Proficloud.io and assign your metrics. <br> Each variable send to the cloud has to be assigned to a metric to be able to log those inside the Time Series Database of the Prodicloud.io. <br>
 ![Proficloud_Metrics](../../images/Proficloud_Metrics.JPG) <br>
 
 Assign each variable you want to work on to a metric. <br>
 
->For small scale application with up to 20 metrics (variables), the Proficloud.io is completely free of charge! <br>
+>For small-scale application with up to 20 metrics (variables), the Proficloud.io is completely free of charge! <br>
 
 ![Proficloud_Metrics_Assigned](../../images/Proficloud_Metrics_Assigned.JPG) <br>
 

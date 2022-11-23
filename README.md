@@ -37,7 +37,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 1 | [Collect data from the field](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/HW02/Code/Node-RED_Examples/2_REST_Demo.md), [OPC UA](/HW02/Code/Node-RED_Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
+| 1 | [Collect data from the field](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/FW_2022/HW02/Code/Node-RED_Examples/2_REST_Demo.md), [OPC UA](/FW_2022/Code/Node-RED_Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
 | 2 | Examples with Node-RED | [NEW! Read data from Node-RED and store it in a local CSV-file](/FW_2022/Code/Node-RED_Examples/3_Read_Data_from_InfluxDB_to_CSV.md) <br> [NEW! Send a daily report (CSV) via E-Mail](/FW_2022/Code/Node-RED_Examples/4_Send_CSV_via_Email.md)|
 
 ***#3 ANALYSE AND PROCESS DATA LOCAL IN INFLUXDB 2.0***
@@ -52,7 +52,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [Influx to any Cloud](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it into any Cloud. |
-| 2 | [Influx to Proficloud.io](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it to Phoenix Contact's Proficloud.io. <br> Free of charge for up to 20 metrics!  |
+| 2 | [NEW! Influx to Proficloud.io](/FW_2022/Code/Cloud/InlfuxDB_to_AnyCloud.md) | Read data from InfluxDB and send it to Phoenix Contact's Proficloud.io. <br> Free of charge for up to 20 metrics!  |
 | 3 | [Set up your EPC for AWS](/10_AWS_QuickstartGuide.md) | Complete set up for AWS Cloud |
 | 4 | [Set up your EPC for MS Azure](/11_Azure_QuickstartGuide.md) | Complete set up for Microsoft Azure Cloud|
 
@@ -68,7 +68,7 @@ If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
 | 1 | [Docker-Portainer App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
-| 2 | [NEW! Device and Update Management App](/FW_2022/Apps/DeviceAndUpdateManagement.md) | Manage the software of devices supporting an OPC UA server, secured connection to the devices and the update of the firmware. |
+| 2 | [Device and Update Management App](/FW_2022/Apps/DeviceAndUpdateManagement.md) | Manage the software of devices supporting an OPC UA server, secured connection to the devices and the update of the firmware. |
 
 
 
