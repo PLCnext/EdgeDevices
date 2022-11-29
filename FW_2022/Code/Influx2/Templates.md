@@ -5,7 +5,7 @@
 1. Naviagte to "Settings" --> "Templates".
 2. Paste the URL of the Templates resouce. A list of predefined Templates can be find [here](https://github.com/influxdata/community-templates/).<BR>
 In this example, the ["Network-Interface-Performance"](https://github.com/influxdata/community-templates/tree/master/network_interface_performance) package will be installed.<br>
-3. Paste the URL of the ["Network-Interface-Performance"](https://github.com/influxdata/community-templates/tree/master/network_interface_performance) and "Lookup for Templates". Install all the resources found from Github by "Install Template". <bt>
+3. Paste the URL of the ["Network-Interface-Performance"](https://github.com/influxdata/community-templates/tree/master/network_interface_performance) and "Lookup for Templates". Install all the resources found from Github by "Install Template". <br>
 ![Template_Install](../../images/Templates1.JPG) <br>
 4. Next, navigate to "Data" --> "Telegraf" and open the new created "Network Interface Monitoring" Configuration the Template installed. <br>
 ![Template_Install2](../../images/Templates2.JPG) <br>
