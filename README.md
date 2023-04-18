@@ -2,7 +2,7 @@
 ### For
 ## Phoenix Contact: EPC 1522 and EPC 1502
  
-### Version: FW 2022.0.7
+### Version: FW 2022.0 LTS
 ---
 
 
@@ -16,10 +16,10 @@ FW 2022.0 available, update your EPC now! - The Update File can be found here: <
 [EPC 1522 FW2022](https://www.phoenixcontact.com/product/1185423) <BR>
 
 
-If you are still using FW 2021 on your EPC, check the [Archive](FW_2021_ARCHIVE/README.md). <br>
+If you are still using FW 2022 on your EPC, check the [Archive](FW_2022/README.md). <br>
 <br>
 
-# Complete Guide for FW 2022.0:
+# Complete Guide for FW 2023.0 LTS:
 
 ***#1 SET UP YOUR EPC***
 
