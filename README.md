@@ -2,14 +2,14 @@
 ### For
 ## Phoenix Contact: EPC 1522 and EPC 1502
  
-### Version: FW 2022.0 LTS
+### Version: FW 2023.0 LTS
 ---
 
 
 
 
-![Banner_FW](/FW_2022/images/NewFW_Banner2.JPG) <br>
-FW 2022.0 available, update your EPC now! - The Update File can be found here: <br>
+![Banner_FW2023](/FW_2023/images/Banner_FW2023_0_LTSg.jpg) <br>
+FW 2023.0 LTS available, update your EPC now! - The Update File can be found here: <br>
 
 [EPC 1502 FW2022](https://www.phoenixcontact.com/product/1185416) <br>
 
@@ -25,10 +25,10 @@ If you are still using FW 2022 on your EPC, check the [Archive](FW_2022/README.m
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 1 | [Introduction](FW_2022/99_Introduction_FW2022.md) | Benefits of Edge Computing <br> Functions and Features of your EPC 15x2 with Firmware 2022.0 |
-| 2 | [Firmware-Update to 2022.0](/FW_2022/Configuration/2_FirmwareUpdate.md) | Instruction on how to update your EPC to FW 2022.0 
-|   3  |  [Configurations](FW_2022/Configuration/0_Installation.md)   |  First steps with your EPC,[Installing the Device](FW_2022/Configuration/0_Installation.md), Functions of the new [Edge-Cockpit](FW_2022/Configuration/1_EdgeCockpit.md), [Network-Configuration](/FW_2022/Configuration/3_Network_Configuration.md), Profinet, [WLAN (wireless)](/FW_2022/Configuration/3_Network_Configuration.md) and configuration of your Interfaces like [DisplayPort](/FW_2022/Configuration/4_DisplayPort.md) and [USB-Ports](/FW_2022/Configuration/5_USB.md) | 
-| 4 | [NEW! Password protect Node-RED ](FW_2022/Configuration/6_PasswordProtect_Node-RED.md) | Password protect Node-RED against unauthorized access from the network. <br> Especially important when accessing the internet with your EPC!  |
+| 1 | [Introduction](FW_2023/Configuration/00_FAQ_FW2023.md) | What is new with FW 2023.0 LTS <br> Functions and Features of your EPC 15x2 with Firmware 2023.0 LTS |
+| 2 | [Firmware-Update to 2023.0 LTS](/FW_2023/Configuration/01_UpdateInstruction23.md) | Instruction on how to update your EPC to FW 2023.0 LTS 
+|   3  |  [Configurations](FW_2022/Configuration/0_Installation.md)   |  First steps with your EPC,[Installing the Device](FW_2022/Configuration/0_Installation.md), Functions of the new [Edge-Cockpit](https://www.plcnext.help/te/WBM/WBM.htm), [Network-Configuration](/FW_2023/Configuration/02_Network.md), Profinet, [WLAN (wireless)](/FW_2023/Configuration/02_Network.md) and configuration of your Interfaces like [DisplayPort](/FW_2023/Configuration/03_DisplayPort.md) and [USB-Ports](/FW_2022/Configuration/5_USB.md) | 
+
 
 
 <br>
