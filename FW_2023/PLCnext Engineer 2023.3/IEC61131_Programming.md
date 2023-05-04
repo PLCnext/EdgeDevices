@@ -20,7 +20,7 @@ To be able to use your EPC with PLCnext Engineer, you fist must import the "Edge
 ![Engineer_Import](/FW_2022/images/Engineer_Import.JPG) <br>
 
 After importing the library, you should see a new folder in "Network" called "Edge PC".  <br>
-![Engineer_Network](/FW_2023/images/Engineer23_1.jpg) <br>
+![Engineer_Network](/FW_2023/images/Engineer23_2.jpg) <br>
 
 Select the right device and firmware-version and import the Controller to your application.
 
