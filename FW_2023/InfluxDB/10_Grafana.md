@@ -16,10 +16,9 @@ The App can be installed via the Web Based Management. <br>
 To do so, navigate to "Configuration" and click on "Add data source". <br>
 Select InfluxDB as your data source. <br>
 ![Grafana_DataSource](/FW_2023/images/Grafana_1.jpg) <br>
-<br>
-Configure all needed information to get access to your buckets inside InfluxDB. <br>
+Configure all needed information to get access to your buckets inside InfluxDB.<br>
 ![Grafana_DataSource2](/FW_2023/images/Grafana_2.jpg) <br>
-<br>
+
 You can test wheter any bucket can be read from Grafana. <br>
 
 4. Now that we successfully tested the connection and were able to read our buckets from InfluxDB, a dashboard can be created to visualise our data. <br>

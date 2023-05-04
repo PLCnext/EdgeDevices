@@ -39,6 +39,7 @@ If you are still using FW 2022 on your EPC, check the [Archive](FW_2022/README.m
 |3| [Telegraf](/FW_2022/Code/Influx2/Telegraf_Configuration.md) | Configure InfluxDB 2.0 Telegraf agent for collecting and reporting metrics with a vast library of input plugins |
 |4| [NEW! Backup & Restore data to a Windows-Host-PC](/FW_2022/Code/Influx2/Backup_Restore.md) | Backup data from a bucket of the EPC, transfer and restore the bucket to a Windows-Host-PC to store and analyse the data on your Windows-PC.  |
 |5| [NEW! InfluxDB Templates](/FW_2022/Code/Influx2/Templates.md) | Install predefined Templates for InfluxDB & Telegraf. Example of installing the "Network Interface Monitoring" Template into InfluxDB and Telegraf. |
+|6| [NEW! Grafana Dashboards](/FW_2023/InfluxDB/10_Grafana.md) | Visualise via Grafana |
 
 ***#4 SEND DATA TO ANY CLOUD***
 |   #  |  Topic   |  Content   |     |
