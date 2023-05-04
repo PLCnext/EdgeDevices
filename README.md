@@ -1,20 +1,11 @@
-## Quick Reference Guide<br>
-### For
-## Phoenix Contact: EPC 1522 and EPC 1502
- 
-### Version: FW 2023.0 LTS
+## EPC 1522 and EPC 1502 Quick Reference Guide <br>
+#####  Version: FW 2023.0 LTS
 ---
-
-
-
 
 ![Banner_FW2023](/FW_2023/images/Banner_FW2023_0_LTSg.jpg) <br>
 FW 2023.0 LTS available, update your EPC now! - The Update File can be found here: <br>
-
 [EPC 1502 FW2022](https://www.phoenixcontact.com/product/1185416) <br>
-
 [EPC 1522 FW2022](https://www.phoenixcontact.com/product/1185423) <BR>
-
 
 If you are still using FW 2022 on your EPC, check the [Archive](FW_2022/README.md). <br>
 <br>

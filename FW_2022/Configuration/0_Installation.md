@@ -3,16 +3,6 @@
 ## Installation
 <br>
 
-### What is new with FW 2022.0?
-
-A lot of very exciting thing got into the new Firmware!
-First of all, the Edge-Cockpit featuring all Edge-Functions nis now build into 192.168.1.10/wbm. (The /cockpit is no longer available and needed) <br>
-Finally you are able to use the WIFI card to establish a wireless internet-connection, and display the configuration and smaller visualisation directly and local via the DisplayPort! <br>
-Next to the Update of PLCnext to version 2022, we also updated all pre-installed Open-Source Software. <br>
-We made sure, that collecting data from the field is now as easy as never. - With new self-developed nodes you can collect a huge number of data with just one node! Since there is a huge amount of new functions, this Github forum is build completely new - feel free to read through and ask any question.
-<br>
-<br>
-
 **Find configurations for your device:** <br>
 #1 Installing your device  :    [chapter below]() <BR>
 #2 Using the new Edge Cockpit to start-up Settings, Node-RED, InfluxDB, Docker-portainer, ... [Chapter Edge Cockpit](1_EdgeCockpit.md) <br>
