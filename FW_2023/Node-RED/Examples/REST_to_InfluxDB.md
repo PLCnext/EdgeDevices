@@ -44,8 +44,8 @@ The package will install new nodes to your Node-RED: <br>
 ![REST_ExampleFlow](/FW_2022/images/REST_ExampleFlow.JPG) <br>
 2. Configure the "InfluxDB Batch Insert" node. Set up your organisation and bucket-name as you have [configured it in InfluxDB](/FW_2022/Influx2/Influx_Configuration.md) <br>
 3. Configure the "plc-read-variables" node. All it needs, is to set the username and passwort (printed). <br>
-If you want to read data from the PLCnext of the EPC itself, connect to the Host-IP "localhost" as shown in the image below. <br> 
-If you want to read data from a PLCnext device in the field, set the ip-adress of the device as Host-IP and set the username/passwort of the device. <br>
+
+
 ![Edit_Rest_Node](/FW_2022/images/Edit_Rest_Node.JPG) <br>
 After doing so, deploy the flow. <br>
 
