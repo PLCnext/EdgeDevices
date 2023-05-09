@@ -9,7 +9,6 @@ By using own-developed nodes for OPC UA and PLCnext REST you can now collect a h
 
 **Please select the Protocoll you require, a detailed explaination with Source Code will then open** 
 
-
 |  #  |  Protocol to collect data   |  Content   |   
 | --- | --- | --- | 
 | 1 | [OPC UA](/FW_2023/Node-RED/Examples/1_OPCUA_Demo.md) | **NEW!** Collect a huge amount of data with just one "OPC UA Tagnode" <BR> Variables from any OPC UA Server can simply be selected from a Drop-Down menu and written into InfluxDB to safe them locally.  |
