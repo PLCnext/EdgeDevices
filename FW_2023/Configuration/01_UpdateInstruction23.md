@@ -28,14 +28,14 @@ Browse the previous downloaded (.raucb) Firmware-file and press "Start". <br>
 ![Update_Firmware](/FW_2023/images/Update_Firmware23.jpg) <br>
 Once the EPC is done installing, reconnect to the WBM and check if FW 2023.0 is now installed. <br>
 
-> **Do not shut-off the power while the EPC is updating! The EPC will restart automatically. The Update can take up to 10 minutes.**
+> **Do not shut-off the power while the EPC is updating! The EPC will restart automatically. The Update can take up to 20 minutes.**
 
 6. OPTIONAL <br>
 Since the "PreUpdate" App is no longer needed, the App can be stopped and deleted from the system. 
 
 
 
-> Attention! <br>If you never used the native Node-RED or InfluxDB software on your device runnning FW 2022.0, those software are deleted after the update. Newer versions of Node-RED and InfluxDB can be installed from the PLCnext Store. <br>
+> Attention! <br>If you never used the native Node-RED or InfluxDB software on your device runnning FW 2022.0, those software are deleted after the update. Newer versions of [Node-RED](https://www.plcnextstore.com/permalinks/apps/latest/60002172000676) and [InfluxDB](https://www.plcnextstore.com/permalinks/apps/latest/60002172000677) can be installed from the PLCnext Store. <br>
 
 >Attention! 
 If you are updating your device directly from FW 2021.0 to FW 2023.0,

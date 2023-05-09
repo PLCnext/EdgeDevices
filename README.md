@@ -28,18 +28,19 @@ If you are still using FW 2022 on your EPC, check the [Archive](FW_2022/README.m
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 1 | [Collect data from the field](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/FW_2022/HW02/Code/Node-RED_Examples/2_REST_Demo.md), [OPC UA](/FW_2022/Code/Node-RED_Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
+| 1 | [Collect data from the field](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/FW_2023/Node-RED/Examples/2_REST_to_InfluxDB.md), [OPC UA](/FW_2023/Node-RED/Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
 | 2 | Examples with Node-RED | [NEW! Read data from Node-RED and store it in a local CSV-file](/FW_2022/Code/Node-RED_Examples/3_Read_Data_from_InfluxDB_to_CSV.md) <br> [NEW! Send a daily report (CSV) via E-Mail](/FW_2022/Code/Node-RED_Examples/4_Send_CSV_via_Email.md)|
 
 ***#3 ANALYSE AND PROCESS DATA LOCAL IN INFLUXDB 2.0***
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 1 | [Set up InfluxDB 2.0 Database](/FW_2022/Code/Influx2/Influx_Configuration.md) | Set up your Organisation and Secuity settings, create a bucket to store data from the field inside the database | 
-|2| [Alerting](/FW_2022/Code/Influx2/InfluxDB_Alerts.md) | Analyse your data with a "threshold check" or a "deadman check", send alerts via a handler  | 
-|3| [Telegraf](/FW_2022/Code/Influx2/Telegraf_Configuration.md) | Configure InfluxDB 2.0 Telegraf agent for collecting and reporting metrics with a vast library of input plugins |
-|4| [NEW! Backup & Restore data to a Windows-Host-PC](/FW_2022/Code/Influx2/Backup_Restore.md) | Backup data from a bucket of the EPC, transfer and restore the bucket to a Windows-Host-PC to store and analyse the data on your Windows-PC.  |
-|5| [NEW! InfluxDB Templates](/FW_2022/Code/Influx2/Templates.md) | Install predefined Templates for InfluxDB & Telegraf. Example of installing the "Network Interface Monitoring" Template into InfluxDB and Telegraf. |
-|6| [NEW! Grafana Dashboards](/FW_2023/InfluxDB/10_Grafana.md) | Visualise via Grafana |
+| 1 | [Install InfluxDB 2.0](/FW_2023/InfluxDB/00_Install_InfluxDB.md) | Install InfluxDB from the PLCnext Store | 
+| 2 | [Set up InfluxDB 2.0 Database](/FW_2022/Code/Influx2/Influx_Configuration.md) | Set up your Organisation and Secuity settings, create a bucket to store data from the field inside the database | 
+|3| [Alerting](/FW_2022/Code/Influx2/InfluxDB_Alerts.md) | Analyse your data with a "threshold check" or a "deadman check", send alerts via a handler  | 
+|4| [Telegraf](/FW_2022/Code/Influx2/Telegraf_Configuration.md) | Configure InfluxDB 2.0 Telegraf agent for collecting and reporting metrics with a vast library of input plugins |
+|5| [NEW! Backup & Restore data to a Windows-Host-PC](/FW_2022/Code/Influx2/Backup_Restore.md) | Backup data from a bucket of the EPC, transfer and restore the bucket to a Windows-Host-PC to store and analyse the data on your Windows-PC.  |
+|6| [NEW! InfluxDB Templates](/FW_2022/Code/Influx2/Templates.md) | Install predefined Templates for InfluxDB & Telegraf. Example of installing the "Network Interface Monitoring" Template into InfluxDB and Telegraf. |
+|7| [NEW! Grafana Dashboards](/FW_2023/InfluxDB/10_Grafana.md) | Visualise your InfluxDB data with Grafana |
 
 ***#4 SEND DATA TO ANY CLOUD***
 |   #  |  Topic   |  Content   |     |

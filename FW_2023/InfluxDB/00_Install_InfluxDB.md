@@ -7,8 +7,7 @@ This gives you the flexibility to install the version you require and the possib
 
 1. Choose the version of InfluxDB you require from our PLCnext Store. <br>
 Newer Versions will be constantly uploaded. <br>
-
-[InfluxDB for EPC 1502 & EPC 1522](...) <br>
+[InfluxDB for EPC 1502 & EPC 1522](https://www.plcnextstore.com/permalinks/apps/latest/60002172000677) <br>
 
 
 2. Offline-Installation: <br> 

@@ -5,11 +5,10 @@
 > Node-RED is no longer pre-installed on the device. <br>
 This gives you the flexibility to install the version you require and the possibility to develop your program on one device and multiply it quickly and easily to a plurality of EPCs. <br>
 
-1. Choose the version of Node-RED you require from our PLCnext Store. <br>
+1. Choose the version of Node-RED you require from the PLCnext Store. <br>
 Newer Versions of Node-RED will be constantly uploaded. <br>
-
-[NODE-RED for EPC 1502](...) <br>
-[NODE-RED for EPC 1522](...) <br>
+[NODE-RED for EPC 1502](https://www.plcnextstore.com/permalinks/apps/latest/60002172000676) <br>
+[NODE-RED for EPC 1522](https://www.plcnextstore.com/permalinks/apps/latest/60002172000678) <br>
 
 2. Offline-Installation: <br> 
 Download the Node-RED App from the PLCnext Store. <br> 
