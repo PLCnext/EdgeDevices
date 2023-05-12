@@ -2,7 +2,7 @@
 
 ## Install and use the thin-edge.io App
 
-![WorksWithCumulocityIoT](../../FW_2023/images/WorksWithCumulocity.jpg) <br>
+![WorksWithCumulocityIoT](/FW_2023/images/WorksWithCumulocity.jpg) <br>
 
 ## Introduction
 thin-edge.io is the first open-source and cloud-agnostic edge framework designed for resource-constrained IoT edge devices. <br>
@@ -15,9 +15,9 @@ Cumulocity IoT gives you very fast visibility and control over your remote asset
 
 1. Install the [thin-edge.io App](https://www.plcnextstore.com/permalinks/apps/latest/60002172000584) from our PLCnext Store. <br>
 2. Install the PLCnext App via the WBM of your EPC. <br> 
-![thin_edge_installed](../../FW_2023/images/thin_edge_installed.jpg) <br>
+![thin_edge_installed](/FW_2023/images/thin_edge_installed.jpg) <br>
 Before starting the App inside the WBM, create a new file inside /opt/plcnext/ named "tedge_default". You can do so by using "WinSCP" or via "Putty". <br>
-![thin-edge_install01](../../FW_2023/images/thin-edge_install01.JPG) <BR>
+![thin-edge_install01](/FW_2023/images/thin-edge_install01.JPG) <BR>
 
 3. Open the new file "tedge_default" and configure the entries to your Cumulocity tennant. <br>
 >TEDGE__C8Y__URL='mytennant.eu-latest.cumulocity.com' <br>
@@ -40,9 +40,10 @@ tenant, if a valid username and password is provided. The provided user has to h
 proper role in Cumulocity to upload device certificates to the tenant. The installer will also
 connect the device to the Cumulocity cloud automatically. After the start of the PLCnext App has
 finished the device should be present in the Cumulocity tenant. <br>
-![CumulocityNewDev](../../FW_2023/images/Cumulocity_EPCnewDev.jpg) <br>
+![CumulocityNewDev](/FW_2023/images/Cumulocity_EPCnewDev.jpg) <br>
 
 6. Test your connection <br>
+Via a short command via SSH (Putty) a measurement can be send into the Cumulocity IoT cloud. <br>
 
         tedge mqtt pub tedge/measurements '{ "temperature": 25 }'
 
