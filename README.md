@@ -63,6 +63,7 @@ If you are still using FW 2022 on your EPC, check the [Archive](FW_2022/README.m
 | --- | --- | --- | --- |
 | 1 | [Docker-Portainer App](/FW_2021_ARCHIVE/08_DockerPortainer.md) | Installation of the Docker-Portainer App for easy integration of containers on a graphical user interface. |
 | 2 | [Device and Update Management App](/FW_2022/Apps/DeviceAndUpdateManagement.md) | Manage the software of devices supporting an OPC UA server, secured connection to the devices and the update of the firmware. |
+| 3 | [thinedge.io Cumulocity IoT](/FW_2022/EdgeFunctions/2_Cumulocity_IOT.md) | The EPC 1502 and EPC 1522 are certified Cumulocity IoT devices. <br> Via the thinedge.io App connectivity to many IoT platforms including Cumulocity IoT, Azure IoT can be done easily. |
 
 
 
