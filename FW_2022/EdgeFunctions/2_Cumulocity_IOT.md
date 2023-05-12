@@ -40,7 +40,8 @@ tenant, if a valid username and password is provided. The provided user has to h
 proper role in Cumulocity to upload device certificates to the tenant. The installer will also
 connect the device to the Cumulocity cloud automatically. After the start of the PLCnext App has
 finished the device should be present in the Cumulocity tenant. <br>
-![CumulocityNewDev](/FW_2023/images/Cumulocity_EPCnewDev.jpg) <br>
+
+    ![CumulocityNewDev](/FW_2023/images/Cumulocity_EPCnewDev.jpg) <br>
 
 6. Test your connection <br>
 Via a short command via SSH (Putty) a measurement can be send into the Cumulocity IoT cloud. <br>
