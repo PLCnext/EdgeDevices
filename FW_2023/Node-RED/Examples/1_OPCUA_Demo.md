@@ -2,7 +2,7 @@
 
 ## Collect data via OPC UA from the field
 
-> **SourceCode can be found [here](../Node-RED/OPCUA_Taglist_toInflux.json)**
+> **SourceCode can be found [here](/FW_2022/Code/Node-RED/OPCUA_Taglist_toInflux.json)**
 
 The OPC UA Taglist Node is now preinstalled on your EPC. <br>
 With the OPC UA Taglist Node, you can connect to any OPC UA Server and read huge amount of data (variables) with just one node.
