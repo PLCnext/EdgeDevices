@@ -13,7 +13,7 @@ To password protect the App follow the the below steps:
 1. Open a new SSH-session (for example using PuTTy). <br>
 First log-in as "admin" using your credentials, switch to "root" user next. <br>
 If you haven't already created a "root" user, enter the following comand and type in a password: <br>
-    > sudo passwd root
+    > sudo passwd root <br>
     ![Node-RED_Passwd2022_Root](/FW_2022/images/Root_Example.png) <br>
 
 
@@ -54,10 +54,8 @@ First delete the command marks "//" and the current hash-pw under "password". <b
 
 6. Safe the "settings.js" file. <br>
 If a error-message about insufficient user-rights appears, click on "Skip All", your changes are still implemented. <br>
-<br>
 Reboot the EPC, for instance yia the WBM. <br>
 Connect to your Node-RED App via a Web-Browser. The App should now be password protected with the password you defined before. <br>
-<br>
-![Node-RED_Password7](/FW_2022/images/Node-RED_Password7.jpg) <br>
+![Node-RED_Password7](/FW_2022/images/Node-RED_Password7.jpg) 
 
 
