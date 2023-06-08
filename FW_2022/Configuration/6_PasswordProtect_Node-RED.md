@@ -13,8 +13,9 @@ If you need to create a new "Root" user, use this command: <br>
 
         sudo passwd root
 
-    Write any password you want to give to the root user. The new passwort has to be created twice. <br>
-    ![Node-RED_Passwd2022_Root](../images/Root_Example.png) <br>
+Write any password you want to give to the root user. The new passwort has to be created twice. <br>
+
+![Node-RED_Passwd2022_Root](../images/Root_Example.png) <br>
     After creating a root user, log-in as root using this command: <BR>
 
         su
