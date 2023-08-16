@@ -17,11 +17,14 @@ If the time doesn't match, the certificates may be rejected from the Server.
 1. Import the [ExampleFlow](/FW_2022/Node-RED/OPCUA_Taglist_toInflux.json) <br>
 ![OPCUA_Tagnode](/FW_2022/images/OPCUA_Tagnode.JPG) <br>
 2. Configure the OPC UA Tagnode. <br>
-Set the "Endpoint" to the Serveradress. In the example below, the adress ("opc.tcp://127.0.0.1:4840") is the OPC UA Server of the EPC. 
-Also, the "Topic" may change if you connect to a non-Phoenix Conatct device. <br> 
-![UA_TagnodeConfig](/FW_2022//images/UA_TagnodeConfig.JPG) <br>
-Also, further extand the configuration (Pencil button) and set the required security setting. <br>
-![UA_TagnodeConfig2](/FW_2022/images/UA_TagnodeConfig2.JPG)
+Set the "Endpoint" to the Serveradress. In the example below, the adress ("opc.tcp://192.168.1.10:4840") is the OPC UA Server of the EPC. 
+Also, the "Topic" may change if you connect to a non-Phoenix Conatct device.  <br> 
+![UA_TagnodeConfig](/FW_2023/images/Taglist2023.JPG) <br>
+
+    > Note: Please be aware, that the topic has changed to "ns=6" with FW 2023.0 LTS. <br>
+
+    Also, further extand the configuration (Pencil button) and set the required security setting. <br>
+![UA_TagnodeConfig2](/FW_2023/images/Taglist_config2.jpg) <br>
 
 3. Configure the OPC UA Client node
 Configure the "OPC UA Client" node and set the same "Endpoint" and "Topic" and Security settings. <br>
@@ -32,7 +35,7 @@ Configure the "OPC UA Client" node and set the same "Endpoint" and "Topic" and S
 1. If all configurations are done correctly, deploy your changes. <br>
 The OPC UA Taglist should show the status "Done", the OPC UA Client should show the status "session active".
 2. If the OPC UA Client successfully connected to the OPC UA Server, the OPC UA Tagnode should now list all available OPC UA variables found on the server. <br> Select all required variables in the list, accept by clicking "Done". <br>
-![OPCUA_Tagnode_Vars](/FW_2022/images/OPCUA_Tagnode_Vars.JPG). <br>
+![OPCUA_Tagnode_Vars](/FW_2023/images/Taglist_vars.jpg). <br>
 
     >Attention! - Since FW 2023.0 LTS, even if the REST variables of the localhost (EPC) are to be read, the full IP address (example: 192.168.1.10) of the localhost must be entered. It is no longer possible to enter "localhost" as the host IP.
 

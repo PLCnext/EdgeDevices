@@ -12,7 +12,7 @@ However, saved passwords and configurations of the individual nodes will be lost
 Make sure your device has a hardware revision of at least HW01. <br>
 ![HW_RevWBM](/FW_2022/images/Update_Ausgangslage.JPG) <br>
 
-2. Download the "PreUpdate App" version 2023.0 from the [PLCnext Store](https://www.plcnextstore.com/eu/app/1564). Alternatively the app is also stored inside the firmware-update folder ".zip" you downloaded from the Phoenix Contact Homepage. <br>
+2. Download the "PreUpdate App" version 2023.0 from the [PLCnext Store](https://www.plcnextstore.com/permalinks/apps/latest/60002172000536). Alternatively the app is also stored inside the firmware-update folder ".zip" you downloaded from the Phoenix Contact Homepage. <br>
    
 3. Install the App "PreUpdate 2023" via the WBM under "PLCnext Apps". <br>
 Once the App is uploaded to your EPC, press "START" to start the App. <br>
