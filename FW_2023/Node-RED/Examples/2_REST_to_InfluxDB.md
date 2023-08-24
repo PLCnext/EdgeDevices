@@ -21,6 +21,8 @@ For **local** Variables, simply set the "HMI" flag in the program: <br>
 For **global** Variables, you have to right-click on the variable and confirm "create HMI tag" or select the variable and click on the "HMI" tab symbol above. <br>
 ![Global_Variable_REST](/FW_2022/images/Global_HMI.JPG) <br>
 
+Important, since FW 2023.0, the configuration "Enable REST interface" must be activated. <br>
+![Enable_REST](/FW_2023/images/Enable_REST.JPG) <br>
 
 Also, if you want to create a secured connection (User authetification), you must enable the "PLCnext user management": <br>
 ![Secured_WBM](/FW_2022/images/Secured_WBM.JPG) <br>
@@ -31,7 +33,8 @@ Also, if you want to create a secured connection (User authetification), you mus
 
 
 ## 2. Install the REST nodes from the Node-RED Palette-Manager 
-Install the package "@kjgalr/node-red-plc-next-connector" from the palette manager <br>
+If you use the [Node-RED App for EPC 1502](https://www.plcnextstore.com/permalinks/apps/latest/60002172000676) or  [for 1522](https://www.plcnextstore.com/permalinks/apps/latest/60002172000678) the REST nodes come pre-installed, therefore Step 2. can be skipped.  <br>
+If you are using a general Node-RED instance without nodes pre-installed, the REST nodes can be installed via the palette-manager: <BR>
 ![Install_REST](/FW_2022/images/Install_REST.gif) <br>
 
 The package will install new nodes to your Node-RED: <br>
@@ -44,9 +47,7 @@ The package will install new nodes to your Node-RED: <br>
 ![REST_ExampleFlow](/FW_2022/images/REST_ExampleFlow.JPG) <br>
 2. Configure the "InfluxDB Batch Insert" node. Set up your organisation and bucket-name as you have [configured it in InfluxDB](/FW_2022/Influx2/Influx_Configuration.md) <br>
 3. Configure the "plc-read-variables" node. All it needs, is to set the username and passwort (printed). <br>
-
-
-![Edit_Rest_Node](/FW_2022/images/Edit_Rest_Node.JPG) <br>
+![Edit_Rest_Node](/FW_2023/images/Rest2023_Config.JPG) <br>
 After doing so, deploy the flow. <br>
 
 >Attention! - Since FW 2023.0 LTS, even if the REST variables of the localhost (EPC) are to be read, the full IP address (example: 192.168.1.10) of the localhost must be entered. It is no longer possible to enter "localhost" as the host IP.
@@ -58,5 +59,6 @@ In my example, 10 variables are read. Since those 10 variables should be written
 ![Combine_REST](/FW_2022//images/Combine_REST.JPG) <br>
 5. The data will now be written into the local InfluxDB database.
 With this method, a hige amount of data (huge amount of variables) can be read into the local database with minimal effort and with the exact same flow that is as small as shown above. <br>
-I can now analyse and pre-process the data in InfluxDB Chronograf. <br>
+I can now analyse and pre-process the data in InfluxDB Chronograf. <br> <br>
+You'll need to configure the InfluxDB node! - Please see here: [Configure InfluxDB database](/FW_2023/InfluxDB/00_Install_InfluxDB.md) <br>
 ![Influx_RESTdata](/FW_2022//images/Influx_RESTdata.JPG) <br>

@@ -94,7 +94,7 @@ Both Ethernet ports have their own MAC address.
 The IP-address can be set either with [PLCnext Engineer](https://www.phoenixcontact.com/product/1046008) (PLC 61131 Engineering-Tool) or via Edge-Cockpit (default X2 - 192.168.2.10/cockpit).
 
 > NOTE: Both Ethernet ports can be used to send data into Azure. 
-Only X2 can be used for PROFINET.
+Only X3 can be used for PROFINET.
 
 <a name="Connect to Azure IoT"></a>
 # Connect to Azure IoT
