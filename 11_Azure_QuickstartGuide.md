@@ -6,7 +6,7 @@ language: {english}
 
 # Connect your EPC1502 / EPC 1522 device to your Azure IoT services
 
-> **[Example SourceCode](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json)**
+> **[Example SourceCode](/FW_2021_ARCHIVE/SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json)**
 
 # Table of Contents
 

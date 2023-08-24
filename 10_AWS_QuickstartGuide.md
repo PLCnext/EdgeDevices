@@ -1,7 +1,7 @@
 # Getting Started Guide for AWS IoT Core
 <br>
 
->**SourceCode: [InfluxDB to AWS](SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json)** <br>
+>**SourceCode: [InfluxDB to AWS](/FW_2021_ARCHIVE/SourceCode/Quickstart_Flows/QuickGuideFlows/InfluxDB_to_AWS.json)** <br>
 
 <br>
 
