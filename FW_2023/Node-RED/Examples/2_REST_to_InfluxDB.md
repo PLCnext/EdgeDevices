@@ -21,9 +21,6 @@ For **local** Variables, simply set the "HMI" flag in the program: <br>
 For **global** Variables, you have to right-click on the variable and confirm "create HMI tag" or select the variable and click on the "HMI" tab symbol above. <br>
 ![Global_Variable_REST](/FW_2022/images/Global_HMI.JPG) <br>
 
-Important, since FW 2023.0, the configuration "Enable REST interface" must be activated. <br>
-![Enable_REST](/FW_2023/images/Enable_REST.JPG) <br>
-
 Also, if you want to create a secured connection (User authetification), you must enable the "PLCnext user management": <br>
 ![Secured_WBM](/FW_2022/images/Secured_WBM.JPG) <br>
 
