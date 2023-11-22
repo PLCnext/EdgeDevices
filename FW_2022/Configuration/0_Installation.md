@@ -6,9 +6,10 @@
 **Find configurations for your device:** <br>
 #1 Installing your device  :    [chapter below]() <BR>
 #2 Using the new Edge Cockpit to start-up Settings, Node-RED, InfluxDB, Docker-portainer, ... [Chapter Edge Cockpit](1_EdgeCockpit.md) <br>
-#3 Network and WIFI Configuration [Chapter Network Configurations](3_Network_Configuration.md) <br>
+#3 Network and WIFI Configuration / Accessing the internet [Chapter Network Configurations](3_Network_Configuration.md) <br>
 #4 Using the DisplayPort to output a local Visualisation or set configurations [Chapter DisplayPort](4_DisplayPort.md) <br>
 #5 Using the USB-Ports [Chapter USB-Ports](5_USB.md) <br>
+#6 Change the timezone and date [Chapter Time&Date](/FW_2023/Configuration/06_Date_and_Timezone.md)
 <br>
 # 
 ## Datasheet

@@ -1,6 +1,6 @@
 # Quick Reference Guide<br>
 
-## Backup a whole application and multiply it easily on multiple EPCs
+## Backup an app and multiply it easily on multiple EPCs
 
 A PLCnext App is stored in a SquashFS container. <br>
 A backup of a PLCnext App (for instance your whole Node-RED Programm with all configurations and nodes or InfluxDB with all dashboards) can be easily created to then multiply the pre-configured app to any other EPC. <br>
@@ -36,3 +36,9 @@ Log-in to the EPC that you want to install the pre-configured App, navigate to "
 
 
 Further information about how to create an app container from scratch can also be found inside the [PLCnext Store Info Center](https://store.plcnext.help/st/PLCnext_App_Integration_Guide/PLCnext_Apps/Building_a_PLCnext_App.htm) <br>
+
+## How to backup a whole application? - For instance to backup a Node-RED and InfluxDB project from one EPC to another EPC?
+
+Now that you know how to backup one app with its contant and programms, a further step could be to backup a whole application (for instance a programmed Node-RED alltogether with a InfluxDB database or a Grafana dashboard..).
+
+Please follow [this guide here.](/FW_2023/Configuration/05_BackUp_Application.md)
