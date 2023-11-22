@@ -11,6 +11,7 @@ To change the timezone, please follow this guide: <BR>
 
 1. Connect to your EPC via SSH ("Putty"). <BR>
 2. After logging in as admin, log in as "root" user. <br>
+If you haven't created a root user yet, please read the chapter "Using the root user" [here](https://www.plcnext.help/te/Operating_System/Root_rights.htm) <br>
 3. Inside the folder /usr/share/zoneinfo you can see all available timezones. <br>
 Since my EPC is located in Germany, I will choose "Europe" --> "Berlin" as my timezone.<br>
 4. Create the neccecary user right via following command (change the timezone ("/Europe/Berlin") to your required place): <BR>
