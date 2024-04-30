@@ -2,12 +2,12 @@
 #####  Version: FW 2023.0 LTS
 ---
 
-![Banner_FW2023](/FW_2023/images/Banner_FW2023_0_LTSg.jpg) <br>
-FW 2023.0 LTS available, update your EPC now! - The Update File can be found here: <br>
-[EPC 1502 FW2022](https://www.phoenixcontact.com/product/1185416) <br>
-[EPC 1522 FW2022](https://www.phoenixcontact.com/product/1185423) <BR>
+![Banner_FW2023](/FW_2024/images/FW_2024_banner.jpg) <br>
+FW 2024.0 LTS available, update your EPC now! - The Update File can be found here: <br>
+[EPC 1502 FW2023](https://www.phoenixcontact.com/product/1185416) <br>
+[EPC 1522 FW2023](https://www.phoenixcontact.com/product/1185423) <BR>
 
-If you are still using FW 2022 on your EPC, check the [Archive](FW_2022/README.md). <br>
+This Guide will highlight newer functions from FW 2024.0 together with common functions from older FW versions. <br>
 <br>
 
 # Complete Guide for FW 2023.0 LTS:
@@ -16,10 +16,11 @@ If you are still using FW 2022 on your EPC, check the [Archive](FW_2022/README.m
 
 |   #  |  Topic   |  Content   |     |
 | --- | --- | --- | --- |
-| 1 | [Introduction](FW_2023/Configuration/00_FAQ_FW2023.md) | What is new with FW 2023.0 LTS <br> Functions and Features of your EPC 15x2 with Firmware 2023.0 LTS |
-| 2 | [Firmware-Update to 2023.0 LTS](/FW_2023/Configuration/01_UpdateInstruction23.md) | Instruction on how to update your EPC to FW 2023.0 LTS 
-|   3  |  [**Configurations**](FW_2022/Configuration/0_Installation.md)   | First steps with your EPC:  <BR> [Installing the Device](FW_2022/Configuration/0_Installation.md) <BR> [Using the Edge-Cockpit](https://www.plcnext.help/te/WBM/WBM.htm), <br> [Network and WLAN Configurations](/FW_2023/Configuration/02_Network.md) <BR> [Accessing the internet](/FW_2023/Configuration/02_Network.md)  <BR> [DisplayPort Visualisation-Output](/FW_2023/Configuration/03_DisplayPort.md), <br>[USB-Ports](/FW_2022/Configuration/5_USB.md) <br> [NEW! Date and Timezone](/FW_2023/Configuration/06_Date_and_Timezone.md) | 
+| 1 | [Introduction](FW_2024/00_FAQ_FW2024.md) | What is new with FW 2024.0 LTS <br> Functions and Features of your EPC 15x2 with Firmware 2024.0 LTS |
+| 2 | [Firmware-Update to 2024.0 LTS](/FW_2023/Configuration/01_UpdateInstruction23.md) | Instruction on how to update your EPC to FW 2024.0 LTS 
+|   3  |  [**Configurations**](FW_2022/Configuration/0_Installation.md)   | First steps with your EPC:  <BR> [Installing the Device](FW_2022/Configuration/0_Installation.md) <BR> [Using the Edge-Cockpit](https://www.plcnext.help/te/WBM/WBM.htm), <br> [Network and WLAN Configurations](/FW_2023/Configuration/02_Network.md) <BR> [NEW! DHCP Support - Accessing the internet](/FW_2023/Configuration/02_Network.md)  <BR> [DisplayPort Visualisation-Output](/FW_2023/Configuration/03_DisplayPort.md), <br>[USB-Ports](/FW_2022/Configuration/5_USB.md) <br> [Date and Timezone](/FW_2023/Configuration/06_Date_and_Timezone.md) <BR> [!NEW! - Factory Reset your EPC FW 2024.0](/FW_2024/01_Factory_Reset.md) | 
 | 4 | [NEW! Backup & Restore an App to another EPC](/FW_2023/Configuration/04_BackUp_App_Container.md) | Example on how to backup a whole Node-RED (or InfluxDB, or Grafana,...) into an .app container and restore the whole application on another EPC |
+
 
 
 
