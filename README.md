@@ -32,7 +32,7 @@ This Guide will highlight newer functions from FW 2024.0 together with common fu
 | --- | --- | --- | --- |
 | 1 | [Collect data from the field](/FW_2022/EdgeFunctions/1_CollectingData.md) |       Collect data from the field via numeros protocolls like [REST](/FW_2023/Node-RED/Examples/2_REST_to_InfluxDB.md), [OPC UA](/FW_2023/Node-RED/Examples/1_OPCUA_Demo.md), [Modbus RTU](/FW_2021_ARCHIVE/02_ModbusToInfluxDB.md) and many more |
 | 2 | Examples with Node-RED | [Read data from Node-RED and store it in a local CSV-file](/FW_2022/Code/Node-RED_Examples/3_Read_Data_from_InfluxDB_to_CSV.md) <br> [Send a daily report (CSV) via E-Mail](/FW_2022/Code/Node-RED_Examples/4_Send_CSV_via_Email.md)|
-| 3 | [Passwort Protect your Node-RED App](/FW_2023/Node-RED/01_PasswortProtect_Node-RED-App.md) | Passwort protect your Node-RED App to secure it from unauthorised access |
+| 3 | [Password-Protect your Node-RED App](/FW_2023/Node-RED/01_PasswortProtect_Node-RED-App.md) | Passwort protect your Node-RED App to secure it from unauthorised access |
 
 ***#3 ANALYSE AND PROCESS DATA LOCAL IN INFLUXDB 2.0***
 |   #  |  Topic   |  Content   |     |
