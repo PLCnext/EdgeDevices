@@ -21,5 +21,5 @@ The WLAN can be used as a client to establish a wireless connection with an acce
 ![WIFI_config](/FW_2024/images/DHCP_WIFI.JPG) <br>
 
 ### Configure the Default Route (**Important for internet access**)
-If you want to access the internet with any ETH-Port or via WIFI, you'll need to set the "Default Route" under "Additional Settings" to the port that is connected to your Router. <br>
+If you want to access the internet with X2 - LAN2 ETH-Port or via WIFI, you'll need to set the "Default Route" under "Additional Settings" to the port that is connected to your Router. <br>
 ![DfaultRoute](/FW_2023/images/DefaultRoute.JPG) <br>
