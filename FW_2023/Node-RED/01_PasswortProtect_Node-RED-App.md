@@ -10,52 +10,16 @@ This is only suitable if you are running on a trusted network. <br>
 
 To password protect the App follow the the below steps:
 
-1. Open a new SSH-session (for example using PuTTy). <br>
-First log-in as "admin" using your credentials, switch to "root" user next. <br>
-If you haven't already created a "root" user, enter the following comand and type in a password: <br>
-    > sudo passwd root <br>
-    ![Node-RED_Passwd2022_Root](/FW_2022/images/Root_Example.png) <br>
-
-
-2. Log-in as "root". <br>
-    > su
-    Read the container ID and the App ID using this comand as root: <br>
-    > podman ps
-
-    ![Node-REDNode-RED_Protected1](/FW_2023/images/Node-RED_Protected1.jpg) <br>
-
-3. Switch to the App-ID folder. <br>
-    Replace "[App-ID]" with the value you have read before.<br>
-    > cd /opt/plcnext/appshome/data/[App-ID]/volumes/node-red
-    
-    Set a new "hash-password". <br>
-    Replace "[Container-ID]" with the value you have read before.<br>
-    > podman exec -it [Container-ID]  node-red admin hash-pw
-
-    Define and type-in any password you want to configure. <br>
-    Copy the newly created hash-password afterwars. <br>
-
-    ![Node-REDNode-RED_Protected2](/FW_2023/images/Node-RED_Protected2.jpg) <br>
-
-4. Open "Win-SCP" next and connect to your EPC as "admin". <br>
-    Navigate to the Node-RED folder, which is located at <br>
-    /opt/plcnext/appshome/data/[App-ID]/volumes/node-red <br>
-
-    Open the "settings.js" file with a double-click. <br>
-    ![Node-REDNode-RED_Protected3](/FW_2023/images/Node-RED_Protected3.jpg) <br>
-
-5.  Inside the file, navigate to the chapter "Securing Node-RED" which is currently commented out. <br>
-First delete the command marks "//" and the current hash-pw under "password". <br> 
-
-    ![Node-RED_Password3](/FW_2022/images/Node-RED_Password3.jpg) <br>
-
-    Next, paste your newly created hash-pw from your PuTTy-SSH-Connection as your "password". <br>
-![Node-REDNode-RED_Protected4](/FW_2023/images/Node-RED_Protected4.jpg) <br>
-
-6. Safe the "settings.js" file. <br>
-If a error-message about insufficient user-rights appears, click on "Skip All", your changes are still implemented. <br>
-Reboot the EPC, for instance yia the WBM. <br>
-Connect to your Node-RED App via a Web-Browser. The App should now be password protected with the password you defined before. <br>
-![Node-RED_Password7](/FW_2022/images/Node-RED_Password7.jpg) 
-
-
+1. Connect your EPC to the internet. To do so, please follow this chapter: [Connect EPC to internet](/FW_2023/Configuration/02_Network.md). <BR>
+2. Install the "node-red-contrib-bcrypt" node using the palette manager. <br>
+3. Import the [Password_hash.json](/FW_2023/Node-RED/Examples/010_Password_hash.json) flow. <BR>
+4. Update the payload "Password Node" with the password. <BR>
+5. Deploy and start the flow. Inject the payload. The hashed value will be in the debug window. <BR>
+![Password_Node_Hash](01_PasswordProtect_NR.jpg) <BR>
+6. Update "/opt/plcnext/appshome/data/60002172000678/volumes/node-red/settings.js" with the hashed password above. Make sure to uncomment the setting: <BR>
+![Password_Node_Hash2](02_PasswordProtect_NR.jpg) <BR>
+7. Reboot your device. <BR>
+8. Open up your Node-RED editor on your EPC again. You should now see a login required. <BR>
+![Password_Node_Hash3](0§_PasswordProtect_NR.jpg) <BR>
+8. You can logout by selecting the "preson" icon in the upper right window. <BR>
+![Password_Node_Hash4](04_PasswordProtect_NR.jpg) <BR>
