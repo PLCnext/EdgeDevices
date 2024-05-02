@@ -1,6 +1,6 @@
 # Quick Reference Guide<br>
 
-## Installing Node-RED on EPC 15x2
+## Network Configuration | DHCP on WIFI | Accessing the internet
 
 All Network configuartions are now to be found ordered inside the tab "Network" under "Configuration" inside the Web Based Management. <br>
 
@@ -9,11 +9,13 @@ Default configuration: <br>
 X3 - LAN1 - 192.168.1.10 **PROFINET CONTROLLER** <br>
 X2 - LAN2 - 192.168.2.10 **PROFINET DEVICE** <br>
 
+> If you want to access the internet, use X2 - LAN2. The default route needs to be set to "LAN2", which is shown in the last chapter below.
+
 All changes are applied after a reboot. <br>
 ![X3_X2_Settings](/FW_2023/images/X2_X3_ETH.jpg) <br>
 
 ### Configure the WIFI (wireless ethernet)
-The WLAN can be used as a client to establish a wireless connection with an access point or router. <br> Either set up a static IP address or set the configuration to DHCP. If DHCP was activated, only the name of the network as well as its password needs to be entered. Once rebooted, the device should be connected to the router and was given an IP address.
+The WLAN can be used as a client to establish a wireless connection with an access point or router. <br> Either set up a static IP address or set the configuration to DHCP. If DHCP was activated, only the name of the network as well as its password needs to be entered. Once rebooted, the device should be connected to the router and was given an IP address. The default route needs to be set to "WIFI", which is shown in the chapter below. <BR>
 ![WIFI_config](/FW_2024/images/DHCP_WIFI.JPG) <br>
 
 ### Configure the Default Route (**Important for internet access**)
