@@ -11,6 +11,8 @@ X2 - LAN2 - 192.168.2.10 **PROFINET DEVICE** <br>
 
 > If you want to access the internet, use X2 - LAN2. The default route needs to be set to "LAN2", which is shown in the last chapter below.
 
+>It is not allowed to assign two ports in the same subnet. For instance, assigning X3 to x.1.10 | X2 to x.1.11 is not allowed and will resume in network problems.
+
 All changes are applied after a reboot. <br>
 ![X3_X2_Settings](/FW_2023/images/X2_X3_ETH.jpg) <br>
 
