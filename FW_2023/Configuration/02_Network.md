@@ -7,7 +7,7 @@ All Network configuartions are now to be found ordered inside the tab "Network" 
 ### Configure the Ethernet-Ports X2 and X3 
 Default configuration: <br>
 X3 - LAN1 - 192.168.1.10 **PROFINET CONTROLLER** <br>
-X2 - LAN2 - 192.168.2.10 **PROFINET DEVICE** <br>
+X2 - LAN2 - 192.168.2.10 **PROFINET DEVICE** | **Accessing the internet** <br>
 
 > If you want to access the internet, use X2 - LAN2. The default route needs to be set to "LAN2", which is shown in the last chapter below.
 
