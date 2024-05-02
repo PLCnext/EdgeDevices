@@ -8,7 +8,7 @@ By default, your Node-RED App from the PLCnext Store is not secured - anyone who
 
 This is only suitable if you are running on a trusted network. <br>
 
-To password protect the App follow the the below steps:
+To password protect the App follow the below steps:
 
 1. Connect your EPC to the internet. To do so, please follow this chapter: [Connect EPC to internet](/FW_2023/Configuration/02_Network.md). <BR>
 2. Install the "node-red-contrib-bcrypt" node using the palette manager. <br>
