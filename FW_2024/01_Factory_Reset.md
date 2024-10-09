@@ -15,15 +15,14 @@ After a very short period of time, you should be able to see the "PLCNEXT EMERGE
 <BR>
 5. Type "Yes" and press enter. <BR>
 Now select which tpye of recovery you want to perform (RESET or RECOVER) <BR>
-RESET: All user data will be deleted (settings, users, programs) <BR>
-RECOVER: Complete factory-reset, if device unable too boot or password forgotten  <br>
-
-![Recovery2](/FW_2024/images/RecoveryS2.png) <BR>
+RESET: All user data will be deleted (settings, users, passwords, programs) <BR>
+RECOVER: Complete factory-reset, this might downgrade your firmware if you ever updated the device. Make sure you install the most current Firmware ater a factory-reset.  <br>
+    ![Recovery2](/FW_2024/images/RecoveryS2.png) <BR>
 
 6. You will be asked to confirm the recovery again. Enter "Y" to start the recovery. Please be patent and do not disconnect the power. The device will reboot on its own once the process is done. <BR>
 
 
- > Any IP-address, PLCnext Engineer project or app, as well as potentionally any FW-update you installed previosly will be deleted. <BR>
+ > Any IP-address, PLCnext Engineer project or app, as well as potentionally any FW-update you installed previosly will be deleted. The device can be reached via the defualt IP again (X3: 192.168.1.10) <BR>
 
  > After starting the recovery process, do not plug the power (24V) and wait several minutes (up to 20min)! The device could then be connected via the default IP address (X3: 192.168.1.10).
  <br>
