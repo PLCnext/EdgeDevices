@@ -33,6 +33,7 @@ Edit the InfluxDB batch node. Set the Organisation and Bucket name as set in you
 Next, set the properties of the node (Pencil button on the right) <br>
 Paste the "admin's Token" or any self-configured Token. <br>
     ![InfluxNodeProperties](../../images/Influx_Properties.JPG) <br>
+>Attention! - Since InfluxDB now operates in a container, the URL can no longer be configured as "https://127.0.0.1:8086 - Instead fill in the IP adress of your EPC! (default: **https://192.168.1.10:8086**)
 Deploy your changes. <BR>
 
 4. As result, you should now be able to see the incoming data in InfluxDB. 
