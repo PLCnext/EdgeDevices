@@ -17,7 +17,8 @@ After a very short period of time, you should be able to see the "PLCNEXT EMERGE
 Now select which tpye of recovery you want to perform (RESET or RECOVER) <BR>
 RESET: All user data will be deleted (settings, users, passwords, programs) <BR>
 RECOVER: Complete factory-reset, this might downgrade your firmware if you ever updated the device. Make sure you install the most current Firmware ater a factory-reset.  <br>
-    ![Recovery2](/FW_2024/images/RecoveryS2.png) <BR>
+
+![Recovery2](/FW_2024/images/RecoveryS2.png) <BR>
 
 6. You will be asked to confirm the recovery again. Enter "Y" to start the recovery. Please be patent and do not disconnect the power. The device will reboot on its own once the process is done. <BR>
 
